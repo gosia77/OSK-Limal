@@ -11,6 +11,7 @@
     --type-heading-1: 1.8rem;
     --type-heading-2: 1.6rem;
     --type-article-p: 1rem;
+    --margin-tb-8: 2rem 0;
 }
 
 .heading-1 {
@@ -21,10 +22,13 @@
 .heading-2 {
     font-size: var(--type-heading-2);
     font-weight: semibold;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .paragraph {
     font-size: var(--type-article-p);
+    text-align: center;
 }
 
   @media screen and (min-width: 768px) {

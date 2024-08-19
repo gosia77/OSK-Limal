@@ -44,6 +44,8 @@ li, a {
     --bg-color5: #00a7a5;
     --bg-color6: #50b99a;
     --bg-clolor7: hsla(231, 50%, 40%, 0.866);
+
+    --margin-tb-8: 2rem 0;
 }
 
 /* header section */
@@ -54,13 +56,18 @@ li, a {
   background-position: center;
   background-repeat: no-repeat;
   height: 500px; /* Dostosuj wysokość według potrzeb */
-  padding: 0;
-  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .header {
-
+  background-color: #555;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
+
   
 
 .header .logo img {
@@ -68,7 +75,7 @@ li, a {
     width: 100px;
     height: auto;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 
 .header::after {
@@ -82,20 +89,27 @@ li, a {
   align-items: center;
   justify-content: space-between;
   font-family: var(--ff-secondary);
-  gap: 5px;
+  gap: 10px;
 }
 
 .contact-info li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-size: 10px;
  
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+
 }
 
 
 
 .contact-icon {
-  width: 30px;
+  width: 23px;
   height: auto;
 }
 /* scroll-arrow */
@@ -135,12 +149,13 @@ li, a {
 .hero h1 {
   font-family: var(--ff-prime);
   text-align: center;
-  color: var(--color);
+ 
 }
 
 /* navigation */
 .navigation-wrapper {
- 
+ padding: 2px;
+ margin: 5px;
 }
 
 .nav-links {
@@ -152,7 +167,7 @@ li, a {
 }
 
 .nav-links a {
-  color: var(--color-white);
+  /* color: var(--color-white); */
 }
 
 .nav-links li {
@@ -178,31 +193,32 @@ li, a {
 /* main */
 
 .main-container {
-
+  
 }
 
-.about:hover {
-  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.about h2 {
-  font-family: var(--ff-secondary);
+.card-content {
+  margin: var(--margin-tb-8);
+}
+
+.main-card {
  
+  width: 190px;
+  height: auto;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  border-radius: 20px;
 }
 
-.about p {
-  font-family: var(--ff-secondary);
- }
 
-.offer h2 {
-  font-family: var(--ff-secondary);
- 
-}
-
-.offer p {
-  font-family: var(--ff-secondary);
- 
-}
 
 
 /* swiper slide */
