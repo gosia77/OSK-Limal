@@ -1,0 +1,43 @@
+
+/* containers */
+
+.container {
+    width: 100%;
+    padding: 16px;
+  }
+
+  
+:root {
+    --type-heading-1: 1.8rem;
+    --type-heading-2: 1.6rem;
+    --type-article-p: 1rem;
+}
+
+.heading-1 {
+    font-size: var(--type-heading-1);
+    font-weight: bold;
+}
+
+.heading-2 {
+    font-size: var(--type-heading-2);
+    font-weight: semibold;
+}
+
+.paragraph {
+    font-size: var(--type-article-p);
+}
+
+  @media screen and (min-width: 768px) {
+    :root {
+        --type-heading-1: 2.5rem;
+        --type-heading-2: 2.0rem;
+        --type-article-p: 1.2rem;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }    
+  }
+
+
+

@@ -1,0 +1,61 @@
+/* global settgings */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color-scheme: light dark;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+li, a {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+/* typography */
+
+:root {
+    --ff-primary: 'Bebas Neue', sans-serif;
+    --ff-secondary: 'Roboto', sans-serif, 'Roboto Mono', monospace;
+    --fs-1: 1rem;
+    --fs-2: 2rem;
+    --fw-600: 600;
+    --color-black: #000;
+    --color: #fff;
+    --bg-clolor: #334297;
+    --bg-color: #0061ae;
+    --bg-color: #007bb6;
+    --bg-color: #0092b1;
+    --bg-color: #00a7a5;
+    --bg-color: #50b99a;
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 1024px) {
+  
+}
