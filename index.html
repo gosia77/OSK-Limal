@@ -133,22 +133,19 @@
                         <h2 class="heading-2">Niezbędnik</h2>
                         <p class="paragraph">Skorzystaj z tych aplikacji, aby ułatwić sobie naukę na prawo jazdy.</p>
                         <div class="app-links">
-                            <ul>
-                                <li>
-                                    <a href="https://play.google.com/store/apps/details?id=com.mirrovia.prawojazdy&hl=pl&gl=US"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <img src="image/test.png" alt="Prawo Jazdy - Testy 2023">
-                                        <span>Darmowa aplikacja z testami.</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://tapo24.pl/tariff/" target="_blank" rel="noopener noreferrer">
-                                        <img src="image/online-test.png" alt="Tapo24 - Taryfikator">
-                                        <span>Przepisy ruchu drogowego i wiecej.</span>
-                                    </a>
-                                </li>
-
-                            </ul>
+                            <div>
+                                <a href="https://play.google.com/store/apps/details?id=com.mirrovia.prawojazdy&hl=pl&gl=US"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="image/test.png" alt="Prawo Jazdy - Testy 2023">
+                                    <p class="paragraph">Darmowa aplikacja z testami.</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://tapo24.pl/tariff/" target="_blank" rel="noopener noreferrer">
+                                    <img src="image/online-test.png" alt="Tapo24 - Taryfikator">
+                                    <p class="paragraph">Przepisy ruchu drogowego i wiecej.</p>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -169,29 +166,32 @@
     </main>
     <footer class="container">
         <div class="footer-container">
-            <div class="">
-                <div id="Kontakt">
-                    <h1>Kontakt</h1>
-                    <h2>Porozmawiajmy o współpracy</h2>
-                    <p>Skontaktuj się z nami, aby omówić szczegóły naszej oferty i rozpocząć współpracę.</p>
-                    <p>660026988</p>
+            <div class="contact">
+                <div id="Kontakt" class="">
+                    <h1 class="heading-1">Kontakt</h1>
+                    <h2 class="heading-3">Zrób pierwszy krok do <span>prawa jazdy</span></h2>
+                    <p class="paragraph-2">Skontaktuj się z nami, aby omówić szczegóły naszej oferty i rozpocząć
+                        współpracę.</p>
+                    <p class="phone-num">660026988</p>
+                    <div class="circle"></div>
                 </div>
-                <div>
-                    <form>
-                        <div class="form-group">
-                            <label for="telephone">Telephone</label>
-                            <input id="telephone" required type="telephone" title="Ośrodek Szkolenia Kierowców LimaL">
-                        </div>
+            </div>
+            <div role="group" class="form-control">
+                <form>
+                    <div class="form-group">
+                        <label for="telephone">Telefon<span role="presentation" aria-hidden="true" class="required">*</span></label>
+                        <input id="telephone" required type="telephone" title="Ośrodek Szkolenia Kierowców LimaL">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" id="email"
-                                title="Ośrodek Szkolenia Kierowców LimaL">
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" id="email"
+                            title="Ośrodek Szkolenia Kierowców LimaL">
+                    </div>
 
-                        <button type="submit">Wyślij</button>
-                    </form>
-                </div>
+                    <button type="submit">Wyślij</button>
+                </form>
+
             </div>
         </div>
         <!--  -->

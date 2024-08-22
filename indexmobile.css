@@ -255,13 +255,70 @@ li, a {
 
 
 
+.app-links {
+ display: flex;
+}
+.app-links img {
+  max-width: 70px;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  border-radius: 5px;
+
+}
+
+.app-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-wrap: wrap;
+  cursor: pointer;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* contact */
+
+.phone-num {
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 56px;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+.contact {
+  position: relative;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 9999px;
+  background-color: var(--bg-color4);
+  position: absolute;
+  z-index: -1;
+ top: 360px;
+}
+
+.heading-3 span {
+  color: var(--bg-color4);
+}
+
 /* form */
 
-form {
+.form-control {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: min(20rem, 100%);
+  padding-top: 80px;
+  
+}
+
+.required {
+  color: red;
 }
 
 .form-group {
@@ -286,20 +343,7 @@ button {
   border: 0;
   border-radius: 0.25rem;
 }
-
-.app-links img {
-  max-width: 50px;
-}
-
-.app-links a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  
-  cursor: pointer;
-  gap: 10px;
-  padding: 10px;
-}
+/*  */
 
 
 
