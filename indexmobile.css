@@ -163,12 +163,14 @@ li, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     cursor: pointer;
+    color: white;
 }
 
 .nav-links a {
   color: var(--color-white);
+  font-size: 12px;
 }
 
 .nav-links li {
@@ -219,7 +221,7 @@ li, a {
   border-radius: 20px;
 }
 
-#O_nas, #Oferta, #Szkolenia, #Galeria, #Kontakt, #Galeria {
+#O_nas, #Oferta, #Szkolenia, #Niezbędnik, #Galeria, #Kontakt {
   scroll-margin-top: 120px; /* Dostosuj wartość w zależności od wysokości nagłówka */
 }
 
@@ -251,9 +253,7 @@ li, a {
 
 /* footer */
 
-.flex {
-  display: flex;
-}
+
 
 /* form */
 
@@ -286,6 +286,21 @@ button {
   border: 0;
   border-radius: 0.25rem;
 }
+
+.app-links img {
+  max-width: 50px;
+}
+
+.app-links a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  cursor: pointer;
+  gap: 10px;
+  padding: 10px;
+}
+
 
 
 
