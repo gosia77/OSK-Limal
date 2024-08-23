@@ -1,17 +1,17 @@
 const slides = [{
-    path: 'gallery/image 1.png',
+    path: 'gallery/skoda.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {
-    path: 'gallery/image 1.png',
+    path: 'gallery/skoda2.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {
-    path: 'gallery/image 1.png',
+    path: 'gallery/plac.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {
-    path: 'gallery/image 1.png',
+    path: 'gallery/plac2.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {

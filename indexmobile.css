@@ -37,12 +37,13 @@ li, a {
     --fw-600: 600;
     --color-black: #000;
     --color-white: #fff;
-    --bg-clolor1: #334297;
-    --bg-color2: #0061ae;
-    --bg-color3: #007bb6;
-    --bg-color4: #0092b1;
-    --bg-color5: #00a7a5;
-    --bg-color6: #50b99a;
+    --bg-color-lightgrey: #EDF2F7;
+    --bg-color-0: #007dbf;
+    --bg-color-0hover: #0276b4;
+    --bg-color-dark: #141414;
+    --color-grey:#808080;
+
+   
     --bg-clolor7: hsla(231, 50%, 40%, 0.866);
 
     --margin-tb-8: 2rem 0;
@@ -145,12 +146,23 @@ li, a {
 
 .hero {
   position: relative;
+  background-image: url(gallery/skoda.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .hero h1 {
   font-family: var(--ff-prime);
   text-align: center;
+  color: var(--color-white);
  
+}
+
+.hero h2 {
+  color: var(--color-white);
+  line-height: 25px;
 }
 
 /* navigation */
@@ -256,27 +268,38 @@ li, a {
 
 
 .app-links {
- display: flex;
+ 
 }
+
+.tapo24 {
+  max-width: 200px;
+  outline: 2px solid --bg-color-lightgrey;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  font-size: var(--fs-1);
+}
+
 .app-links img {
-  max-width: 70px;
-  background-color: var(--color-white);
-  -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  border-radius: 5px;
+  max-width: 200px;
 
 }
 
 .app-links a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-wrap: wrap;
+
   cursor: pointer;
-  gap: 10px;
-  padding: 10px;
+}
+
+/* app-card */
+
+.app-links {
+  -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
+  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);;
+  max-width: 400px;
+  padding: 20px;
 }
 
 /* contact */
@@ -297,7 +320,7 @@ li, a {
   width: 140px;
   height: 140px;
   border-radius: 9999px;
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color-0);
   position: absolute;
   z-index: -1;
  top: 360px;
@@ -309,41 +332,82 @@ li, a {
 
 /* form */
 
-.form-control {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding-top: 80px;
-  
+.custom-form {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+
+.custom-form .form-group {
+  margin-bottom: 15px;
+}
+
+.custom-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.custom-form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--bg-color-lightgrey);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.custom-form input:focus {
+  outline: none; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+
+
+
+.custom-form button {
+    width: 100%; 
+    padding: 10px;
+    font-size: 1em; 
+    background-color: var(--bg-color-0); 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.custom-form button:hover {
+  background-color: var(--bg-color-0hover);
 }
 
 .required {
   color: red;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-input,
-button {
-  padding: 0.5rem 0.75rem;
-}
-
-input::placeholder {
-  font-size: 1rem;
-}
-
-button {
-  cursor: pointer;
-  background-color: hsl(175 60% 40%);
-  border: 0;
-  border-radius: 0.25rem;
-}
 /*  */
+
+.bg-dark {
+  max-width: 100vw;
+  background-color: var(--bg-color-dark);
+  color: var(--color-grey);
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+
+.bg-dark img {
+  max-width: 70px;
+  height: auto;
+}
+
+.bg-dark p {
+  font-size: var(--fs-0-5);
+}
+
+
+
 
 
 
