@@ -326,8 +326,8 @@ li, a {
  top: 360px;
 }
 
-.heading-3 span {
-  color: var(--bg-color4);
+.bg-blue {
+  color: var(--bg-color-0);
 }
 
 /* form */
@@ -357,6 +357,7 @@ li, a {
   border-radius: 3px;
   background-color: var(--bg-color-lightgrey);
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  color: var(--bg-color-dark);
 }
 
 .custom-form input:focus {
@@ -389,7 +390,6 @@ li, a {
 /*  */
 
 .bg-dark {
-  max-width: 100vw;
   background-color: var(--bg-color-dark);
   color: var(--color-grey);
   display: flex;
@@ -398,7 +398,7 @@ li, a {
 }
 
 .bg-dark img {
-  max-width: 70px;
+  max-width: 50px;
   height: auto;
 }
 
