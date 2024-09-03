@@ -42,6 +42,7 @@ li, a {
     --bg-color-0hover: #0276b4;
     --bg-color-dark: #141414;
     --color-grey:#808080;
+    --color-dark-grey: #231F20;
 
    
     --bg-clolor7: hsla(231, 50%, 40%, 0.866);
@@ -61,7 +62,8 @@ li, a {
 }
 
 .header {
-  background-color: #555;
+  /* background-color: var(--color-white); */
+  background-color: var(--color-white);
   position: fixed;
   top: 0;
   width: 100%;
@@ -104,7 +106,7 @@ li, a {
 .contact-info a {
   display: flex;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-dark-grey);
 }
 
 
@@ -173,6 +175,14 @@ li, a {
  
 }
 
+.heading-1 span {
+  color: var(--bg-color-0);
+}
+
+.color-blue {
+  color: var(--bg-color-0);
+}
+
 .hero h2 {
   color: var(--color-white);
   line-height: 25px;
@@ -190,11 +200,11 @@ li, a {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    color: white;
+    
 }
 
 .nav-links a {
-  color: var(--color-white);
+  color: var(--color-dark-grey);
   font-size: 12px;
 }
 
@@ -284,6 +294,11 @@ li, a {
   display: flex;
   flex-direction: column;
  gap: 5px;
+ padding-top: 10px;
+}
+
+.footer-logo {
+  padding-top: 5px;
 }
 
 .tapo24 {
@@ -410,6 +425,10 @@ li, a {
   color: red;
 }
 
+.success-message {
+
+}
+
 /*  */
 
 .bg-dark {
@@ -423,7 +442,7 @@ li, a {
 .bg-dark img {
   max-width: 50px;
   height: auto;
-  padding-top: 5px;
+  /* padding-top: 4px; */
 }
 
 .bg-dark p {

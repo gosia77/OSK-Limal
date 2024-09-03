@@ -64,7 +64,7 @@
 
         <div class="hero container-xl">
 
-            <h1 class="animate__animated animate__fadeInDown heading-1">Ośrodek Szkolenia Kierowców LimaL</h1>
+            <h1 class="animate__animated animate__fadeInDown heading-1">Ośrodek Szkolenia Kierowców <br> <span class="color-blue">LimaL</span></h1>
 
             <!-- <div class="animate__animated animate__pulse">
                 <h2 class="heading-2">Oferujemy kompleksowe <br> przygotowanie do egzaminu <br> na prawo jazdy kat B
@@ -123,15 +123,15 @@
                         przygotowanie do egzaminu oraz bezpieczną jazdę w codziennych sytuacjach.
                     </p>
                 </div>
-        </div>
-        <!--  -->
-
-        <div id="Galeria" class="swiper mySwiper">
-            <div class="swiper-wrapper">
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
+            <!--  -->
+
+            <div id="Galeria" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
 
     </main>
     <footer class="container">
@@ -164,48 +164,59 @@
                             title="Ośrodek Szkolenia Kierowców LimaL" placeholder="adres@email.com">
                     </div>
 
+                    <div class="form-group">
+                        <label for="message-label" for="message" class="form-label">Wiadomość</label>
+                        <textarea name="message" placeholder="Maksymalnie 250 znaków" maxlength="250" id="message"
+                            clas="form-textarea"></textarea>
+                    </div>
+
                     <button type="submit">Wyślij</button>
                 </form>
 
-            </div>
-        </div>
-    </footer>
-        <!--  -->
-        <div class="bg-dark container-xl">
-            <div>
-                <img src="image/Limal-1 (1).jpg" alt="Ośrodek Szkolenia Kierowców LimaL">
-            </div>
-            <div>
-                <p>Nip: 7372028777</p>
-                <p>Regon: 528800246</p>
-                <p>Nr konta: 81 1240 5152 1111 0011 4123 5573</p>
-            </div>
-            <div>
-                <div class="app">
-                    <a href="https://tapo24.pl/" target="_blank" rel="noopener noreferrer">
-                        <div class="tapo24">
-                            <p>TaPo24</p>
-                        </div>
-                    </a>
-
-                    <a href="https://play.google.com/store/apps/details?id=com.mirrovia.prawojazdy&hl=pl&gl=US"
-                        target="_blank" rel="noopener noreferrer">
-                        <img src="image/image 23.png" alt="Tapo24 - Taryfikator">
-                    </a>
-
-                    <a href="https://apps.apple.com/pl/app/prawo-jazdy-2024/id1494686336?l=pl" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="image/image 22.png" alt="Tapo24 - Taryfikator">
-                    </a>
-
+                <!-- hidden message -->
+                <div id="success-message" style="display: none; color: #007dbf; margin-top: 20px;">
+                    <h1>Formularz został wysłany pomyślnie!</h1>
                 </div>
 
             </div>
         </div>
+    </footer>
+    <!--  -->
+    <div class="bg-dark container-xl">
+        <div class="footer-logo">
+            <img src="image/Limal-1 (1).jpg" alt="Ośrodek Szkolenia Kierowców LimaL">
+        </div>
+        <div>
+            <p>Nip: 7372028777</p>
+            <p>Regon: 528800246</p>
+            <p>Nr konta: 81 1240 5152 1111 0011 4123 5573</p>
+        </div>
+        <div>
+            <div class="app">
+                <a href="https://tapo24.pl/" target="_blank" rel="noopener noreferrer">
+                    <div class="tapo24">
+                        <p>TaPo24</p>
+                    </div>
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.mirrovia.prawojazdy&hl=pl&gl=US"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="image/image 23.png" alt="Tapo24 - Taryfikator">
+                </a>
+
+                <a href="https://apps.apple.com/pl/app/prawo-jazdy-2024/id1494686336?l=pl" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="image/image 22.png" alt="Tapo24 - Taryfikator">
+                </a>
+
+            </div>
+
+        </div>
+    </div>
 
 
 
-    
+
 
 
 
@@ -215,6 +226,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
     <script src="slider.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>
