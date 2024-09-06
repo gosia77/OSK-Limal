@@ -62,7 +62,6 @@ li, a {
 }
 
 .header {
-  /* background-color: var(--color-white); */
   background-color: var(--color-white);
   position: fixed;
   top: 0;
@@ -90,7 +89,6 @@ li, a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
   gap: 10px;
 }
 
@@ -99,8 +97,6 @@ li, a {
   justify-content: flex-end;
   align-items: center;
   font-size: 10px;
- 
- 
 }
 
 .contact-info a {
@@ -108,8 +104,6 @@ li, a {
   align-items: center;
   color: var(--color-dark-grey);
 }
-
-
 
 .contact-icon {
   width: 23px;
@@ -431,8 +425,12 @@ li, a {
   color: red;
 }
 
-.success-message {
-
+.form-group textarea {
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: var(--bg-color-lightgrey) solid 2px;
+  border-radius: 3px;
 }
 
 /*  */
