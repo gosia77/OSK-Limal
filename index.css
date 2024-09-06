@@ -41,6 +41,7 @@ a {
   --fs-1: 1rem;
   --fs-2: 2rem;
   --fs-3: 3rem;
+  --fs-3-5: 3.5rem;
   --fw-600: 600;
   --font-family: "Montserrat", sans-serif;
   --color-black: #000;
@@ -120,6 +121,61 @@ a {
   .main-content {
     flex: 1 1 45%;
     max-width: 370px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact, 
+  .custom-form {
+    flex: 1 1 50%;
+  }
+  .heading-contact {
+    font-size: var(--fs-3-5);
+  }
+
+  .heading-3 {
+    line-height: 67px;
+  }
+
+  .circle {
+    top: 430px;
+  }
+
+  .bg-dark {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .app {
+    flex-direction: row;
+    margin-right: 100px;
+  }
+
+  .footer-logo img {
+     max-width: 170px;
+  }
+
+  .app img {
+    max-width: 100px;
+  }
+
+  .tapo24 {
+    max-width: 100px;
+    padding: 0 26px 26px;
+  }
+
+  .tapo24 p {
+    
+  }
+
+  .formal-info {
+    display: flex;
+    gap: 35px;
   }
 
 }
