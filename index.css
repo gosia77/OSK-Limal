@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: montserrat;
 }
 
 html:focus-within {
@@ -37,14 +38,14 @@ a {
 /* typography */
 
 :root {
-  --ff-primary: 'Bebas Neue', sans-serif;
-  --ff-secondary: 'Roboto', sans-serif, 'Roboto Mono', monospace;
   --fs-1: 1rem;
   --fs-2: 2rem;
   --fs-3: 3rem;
   --fw-600: 600;
+  --font-family: "Montserrat", sans-serif;
   --color-black: #000;
   --color: #fff;
+  --padding-08: 8px;
   --bg-clolor: #334297;
   --bg-color: #0061ae;
   --bg-color: #007bb6;
@@ -73,10 +74,12 @@ a {
 
   .contact-info li {
     font-size: var(--fs-1);
+    padding: var(--padding-08);
   }
 
   .nav-links a {
     font-size: var(--fs-1);
+    padding: var(--padding-08);
   }
 
   .header .logo img {
@@ -106,5 +109,17 @@ a {
     height: 50px;
   }
 
+
+  .main-section {
+    display: flex;
+    flex-wrap: wrap;
+    --webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    flex: 1 1 45%;
+    max-width: 370px;
+  }
 
 }
