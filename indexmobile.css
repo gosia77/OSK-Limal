@@ -148,7 +148,7 @@ li, a {
 .hero {
   position: relative;
   background-image: url(gallery/skoda.jpg);
-  min-width: 50vh;
+ max-width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
