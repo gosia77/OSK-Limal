@@ -56,6 +56,22 @@ a {
   --bg-color: #50b99a;
 }
 
+@media screen and (min-width: 20em) {
+  .phone-num {
+    margin: 0;
+  }
+
+  .header .logo img {
+    padding: 2px;
+    max-width: 50px;
+  }
+
+  .contact-info {
+    gap: 10px;
+  }
+
+}
+
 @media screen and (max-width: 23em) {
   .container {
     max-width: 100%;
@@ -227,6 +243,22 @@ a {
 
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .contact-info {}
 }
+
+@media screen and (min-width: 160em) {
+  
+
+
+  .footer-container {
+    margin-bottom: 45px;
+  }
+
+  .circle {
+    top: 330px;
+  }
+}
+
+
+
