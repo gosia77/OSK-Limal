@@ -55,6 +55,10 @@ a {
   --bg-color: #50b99a;
 }
 
+@media screen and (max-width: 23em) {
+  
+}
+
 @media (min-width: 768px) {}
 
 

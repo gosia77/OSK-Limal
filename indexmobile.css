@@ -54,6 +54,7 @@ li, a {
 
 .header-section {
   background-image: url(image/image\ 1.png);
+  background-position: 50% 50%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,7 +90,7 @@ li, a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 25px;
 }
 
 .contact-info li {
