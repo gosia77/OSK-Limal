@@ -165,7 +165,8 @@ li, a {
   width: 100%;
   height: 20px; /* Wysokość rozmytego obszaru */
   background: linear-gradient(hsla(0, 1%, 47%, 0) 5%, #fff 100%);
-  backdrop-filter: blur(18px); /* Intensywność rozmycia */
+  backdrop-filter: blur(5px); /* Intensywność rozmycia */
+  background-color: hsl(0, 0%, 100%, 0.1);
 }
 
 .hero h1 {
