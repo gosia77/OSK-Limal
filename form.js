@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const errorMessage = document.getElementById('tel-error-message');
     
     // walidacja numeru telefonu 
-    const phonePattern = /^\d{3} \d{3} \d{3}$/;
+    const phonePattern = /^\d{9}$/;
 
     if (!phonePattern.test(telephone)) {
         errorMessage.style.display = 'block';
