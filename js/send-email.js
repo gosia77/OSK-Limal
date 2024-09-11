@@ -27,15 +27,24 @@ setUpListenerForCustomPopUp("incorrect-message", "Niepoprawna wiadomość!", fal
 
 const handleEmailSubmission = (e) => {
   e.preventDefault();
+  onEmailSent();
+  emitEmailIsSending();
 
   const email = document.querySelector("input[name='email']").value;
   const phone = document.querySelector("input[name='telefon']").value;
   const message = document.querySelector("textarea[name='message']").value;
 
 
-  if (!validatePhoneNumber(phone) || !validateEmail(email) || !validateMessage(message)) {
+  if (
+    [
+      validatePhoneNumber(phone), validateEmail(email), validateMessage(message)
+    ].some((condition) => condition)
+  ) {
+    emitErrorEvent()
+
     return;
   } 
+
 
   // validate data
   // ...zapobiec wstawianiu niepotrzebnych znaków
@@ -46,20 +55,21 @@ const handleEmailSubmission = (e) => {
 
 
   // send email
-  // sendEmail(email, phone, message);
+  sendEmail(email, phone, message);
 };
 
 function validatePhoneNumber(phone) {
   const phonePattern = /^\d{9}$/;
   console.log(phonePattern.test(phone));
+  setTimeout(()=> {}, 3000)
   
     if (!phonePattern.test(phone)) {
       const incorrectPhoneNumber = new CustomEvent("incorrect-phone-number");
       document.dispatchEvent(incorrectPhoneNumber);
-      return;
+      return true;
     } 
     
-    console.log("its ok");
+    return false;
 }
 
 function validateEmail(email) {
@@ -69,20 +79,40 @@ function validateEmail(email) {
   if (!emailPattern.test(email)) {
     const incorrectEmailAdress = new CustomEvent("incorrect-email");
     document.dispatchEvent(incorrectEmailAdress);
-    return;
+    return true;
   }
-  
+  return false;
 }
-
 
 function validateMessage(message) {
   if (message.trim() === "") {
     const incorrectMessage = new CustomEvent("incorrect-message");
     document.dispatchEvent(incorrectMessage);
-    return;
+    return true;
   }
+
+  return false;
 }
 
+function onEmailSent() {
+  const submitButton = document.querySelector('button[type="submit"]')
+// add animations
+  document.addEventListener('is-sending-email', () => {
+    submitButton.style.backgroundColor = 'green'
+    submitButton.disabled = true;
+  })
+
+  document.addEventListener('error', () => {
+    
+    // submitButton.style.backgroundColor = 'blue'
+    submitButton.disabled = false;
+  })
+
+  document.addEventListener('successfully-email-sent', () => {
+    submitButton.style.backgroundColor = 'blue'
+    submitButton.disabled = false;
+  })
+}
 
 // dodaj do metody handleEmailSubmission
 // validatePhoneNumber(123456789)
@@ -118,6 +148,7 @@ const postEmail = (data) => {
     .catch((err) => {
       // send dom event about error
       console.log(err);
+      emitErrorEvent();
     })
     .then((res) => res.json())
     .then((data) => {
@@ -133,7 +164,21 @@ const postEmail = (data) => {
     });
 };
 
+function emitErrorEvent() {
+   // tworzenie eventu
+   const errorEvent = new CustomEvent("error");
 
+   // wysylanie eventu
+   document.dispatchEvent(errorEvent);
+}
+
+function emitEmailIsSending() {
+  // tworzenie eventu
+  const errorEvent = new CustomEvent("is-sending-email");
+
+  // wysylanie eventu
+  document.dispatchEvent(errorEvent);
+}
 
 
 document.querySelector("button[type='submit']").addEventListener('click', (e) => {
