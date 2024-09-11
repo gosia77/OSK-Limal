@@ -32,6 +32,11 @@ const handleEmailSubmission = (e) => {
   const phone = document.querySelector("input[name='telefon']").value;
   const message = document.querySelector("textarea[name='message']").value;
 
+
+  if (!validatePhoneNumber(phone) || !validateEmail(email) || !validateMessage(message)) {
+    return;
+  } 
+
   // validate data
   // ...zapobiec wstawianiu niepotrzebnych znaków
   // walidacja pl nr
@@ -51,11 +56,34 @@ function validatePhoneNumber(phone) {
     if (!phonePattern.test(phone)) {
       const incorrectPhoneNumber = new CustomEvent("incorrect-phone-number");
       document.dispatchEvent(incorrectPhoneNumber);
-      return
+      return;
     } 
     
     console.log("its ok");
 }
+
+function validateEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  console.log(emailPattern.test(email));
+
+  if (!emailPattern.test(email)) {
+    const incorrectEmailAdress = new CustomEvent("incorrect-email");
+    document.dispatchEvent(incorrectEmailAdress);
+    return;
+  }
+  
+}
+
+
+function validateMessage(message) {
+  if (message.trim() === "") {
+    const incorrectMessage = new CustomEvent("incorrect-message");
+    document.dispatchEvent(incorrectMessage);
+    return;
+  }
+}
+
+
 // dodaj do metody handleEmailSubmission
 // validatePhoneNumber(123456789)
 // validatePhoneNumber(123456)
