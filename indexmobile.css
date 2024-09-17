@@ -293,9 +293,13 @@ li, a {
 
 .app {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
  gap: 5px;
  padding-top: 10px;
+}
+
+.app img {
+  max-width: 150px;
 }
 
 .footer-logo {
@@ -306,7 +310,7 @@ li, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100px;
+  max-width: 150px;
   max-height: 60px;
   padding: 1px;
   border-radius: 10px;
@@ -376,7 +380,7 @@ li, a {
   background-color: var(--bg-color-0);
   position: absolute;
   z-index: -1;
- top: 360px;
+ top: 310px;
 }
 
 .bg-blue {
