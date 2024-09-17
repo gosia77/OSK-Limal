@@ -293,7 +293,7 @@ li, a {
 
 .app {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
  gap: 5px;
  padding-top: 10px;
 }
@@ -306,10 +306,10 @@ li, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50px;
-  max-height: 15px;
+  max-width: 100px;
+  max-height: 60px;
   padding: 1px;
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: var(--color-black);
   color: var(--color-white);
   text-align: center;
@@ -322,7 +322,7 @@ li, a {
 }
 
 .app-links img {
-  max-width: 200px;
+  max-width: 100px;
 
 }
 
@@ -339,6 +339,19 @@ li, a {
   box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);;
   max-width: 400px;
   padding: 20px;
+}
+
+/* app section */
+
+/* .app-content,
+.app {
+  flex: 1 1 20%;
+} */
+
+.accent {
+  color: var(--bg-color-0);
+  font-size: 2rem;
+  line-height: 15px;
 }
 
 /* contact */

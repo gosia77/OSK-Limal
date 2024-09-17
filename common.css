@@ -26,6 +26,8 @@
   --type-article-p: 1rem;
   --margin-tb-8: 2rem 0;
   --type-article-p-2: 1.5rem;
+  --type-article-p-1: 1rem;
+  --type-article-p-0-7-5: 0.75rem;
   --accent-color: hsla(0, 96%, 52%, 0.718);
 }
 
@@ -58,12 +60,14 @@
 }
 
 .paragraph-2 {
-  font-size: var(--type-article-p-2);
+  font-size: var(--type-article-p-1);
   line-height: 25px;
   font-weight: 400;
   padding-top: 20px;
   padding-bottom: 20px;
+  word-wrap: break-word;
 }
+
 
 .popup-container {
   position: fixed;
