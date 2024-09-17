@@ -75,6 +75,10 @@ a {
     gap: 10px;
   }
 
+  .app-container {
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (max-width: 23em) {
@@ -168,6 +172,10 @@ a {
     border-radius: 0.5px;
   }
 
+  .app-container {
+    flex-direction: column;
+  }
+
   .app-content .paragraph-2 {
     font-size: var(--type-article-p-0-7-5);
   }
@@ -208,9 +216,10 @@ a {
     padding: var(--padding-08);
   }
 
-  .header .logo img {
-    width: 125px;
-    height: auto;
+  .logo img {
+    width: 60px;
+    height: 51px;
+    
   }
 
   .contact-info {
@@ -271,13 +280,14 @@ a {
   }
 
   .circle {
-    top: 400px;
+    top: 345px;
   }
 
   .bg-dark {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
+    margin-top: 20px;
   }
 
   .app {
