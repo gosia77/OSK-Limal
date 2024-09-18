@@ -100,23 +100,29 @@ function onEmailSent() {
   document.addEventListener('is-sending-email', () => {
     submitButton.style.backgroundColor = 'green'
     submitButton.disabled = true;
+
+    submitButton.classList.add('animate__animated', 'animate__pulse');
   })
 
   document.addEventListener('error', () => {
     
     // submitButton.style.backgroundColor = 'blue'
     submitButton.disabled = false;
+
+
+    submitButton.classList.remove('animate__pulse');
+    submitButton.classList.add('animate__animated', 'animate__shakeX');
   })
 
   document.addEventListener('successfully-email-sent', () => {
     submitButton.style.backgroundColor = 'blue'
     submitButton.disabled = false;
+
+    submitButton.classList.remove('animate__shakeX');
+    submitButton.classList.add('animate__animated', 'animate__bounce');
   })
 }
 
-// dodaj do metody handleEmailSubmission
-// validatePhoneNumber(123456789)
-// validatePhoneNumber(123456)
 
 const sendEmail = (email, phone, message) => {
   postEmail({
