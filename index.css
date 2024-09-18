@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: montserrat;
+  /* ewentualnie usunac text decoration */
+  text-decoration: none;
 }
 
 html:focus-within {
@@ -40,6 +42,7 @@ a {
 :root {
   --fs-0-5: 0.5rem;
   --fs-1: 1rem;
+  --fs-1-5: 1.5ren;
   --fs-2: 2rem;
   --fs-3: 3rem;
   --fs-3-5: 3.5rem;
@@ -335,9 +338,16 @@ a {
 
 }
 
-@media screen and (min-width: 1024px) {
-  .contact-info {}
+@media screen and (min-width: 64em) {
+  .formal-info p {
+    font-size: var(--fs-1-5);
+  }
+
+  .app {
+    padding-top: 100px;
+  }
 }
+
 
 @media screen and (min-width: 160em) {
   
@@ -348,8 +358,14 @@ a {
   }
 
   .circle {
-    top: 330px;
+    top: 290px;
   }
+
+  .formal-info p {
+    font-size: var(--fs-2);
+    padding-right: 16px;
+  }
+
 }
 
 
