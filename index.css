@@ -68,7 +68,7 @@ a {
 
   .header .logo img {
     padding: 2px;
-    max-width: 50px;
+    /* max-width: 50px; */
   }
 
   .contact-info {
@@ -172,10 +172,6 @@ a {
     border-radius: 0.5px;
   }
 
-  .app-container {
-    flex-direction: column;
-  }
-
   .app-content .paragraph-2 {
     font-size: var(--type-article-p-0-7-5);
   }
@@ -217,8 +213,8 @@ a {
   }
 
   .logo img {
-    width: 60px;
-    height: 51px;
+    max-width: 70px;
+   
     
   }
 
@@ -279,6 +275,12 @@ a {
     padding-bottom: 10px;
   }
 
+  .app-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+
   .circle {
     top: 345px;
   }
@@ -294,7 +296,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 10px;
   }
 
   .footer-logo img {
@@ -307,11 +309,12 @@ a {
 
   .tapo24 {
     max-width: 150px;
-    
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .tapo24 p {
-    padding-top: 25px;
+    padding-top: 5px;
   }
 
   .phone-num {
@@ -322,6 +325,12 @@ a {
     display: flex;
     gap: 1rem;
   }
+
+  .contact-info a {
+    font-size: var(--fs-1);
+  }
+
+  
 
 
 }
