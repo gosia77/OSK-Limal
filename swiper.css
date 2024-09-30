@@ -1,0 +1,17 @@
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  color: white;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    height: auto;
+    max-height: 700px;
+  }
+}

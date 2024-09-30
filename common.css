@@ -1,5 +1,10 @@
 /* containers */
 
+html,
+body {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   padding: 16px;
@@ -17,9 +22,9 @@
   --type-heading-3: 2rem;
   --type-article-p: 1rem;
   --margin-tb-8: 2rem 0;
-  --margin-xxs: .25rem;
-  --margin-xs:.5rem;
-  --margin-s: .75rem;
+  --margin-xxs: 0.25rem;
+  --margin-xs: 0.5rem;
+  --margin-s: 0.75rem;
   --margin-m: 1rem;
   --margin-l: 1.25rem;
   --margin-xl: 1.75rem;
@@ -37,7 +42,6 @@
   max-width: 1280px;
   padding: 16px;
 }
-
 
 .heading-contact {
   font-size: var(--type-heading-3);
@@ -77,13 +81,12 @@
   word-wrap: break-word;
 }
 
-
 .popup-container {
   position: fixed;
   top: 20px;
   color: white;
   z-index: 100000;
-  
+
   border-radius: 5px;
   left: 50%;
   display: flex;
@@ -114,4 +117,14 @@
 }
 
 @media screen and (min-width: 48em) {
+}
+
+.facebook-floating {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 100000;
+  padding: 16px;
+  background-color: white;
+  border-radius: 50%;
 }

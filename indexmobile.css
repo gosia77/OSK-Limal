@@ -88,8 +88,18 @@ li, a {
 .contact-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 25px;
+}
+
+.contact-info img {
+  max-width: 16px;
+  height: auto;
+  margin-right: 4px;
+}
+
+.contact-info img#facebook {
+  max-width: 32px;
 }
 
 .contact-info li {
@@ -103,6 +113,7 @@ li, a {
   display: flex;
   align-items: center;
   color: var(--color-dark-grey);
+  
 }
 
 .contact-icon {
@@ -190,7 +201,7 @@ li, a {
 
 /* navigation */
 .navigation-wrapper {
- padding: 2px;
+ padding: 8px 16px;
  margin: 5px;
 }
 
@@ -349,21 +360,18 @@ li, a {
 }
 
 /* app section */
-
-.app-container {
+.apps {
   display: flex;
-  flex-direction: row;
-}
-
-.app-content,
-.app {
-  flex: 1 1 20%;
+  
 } 
+
+.apps a {
+  flex: 1 1 20%;
+  margin-right: 16px;
+}
 
 .accent {
   color: var(--bg-color-0);
-  font-size: 2rem;
-  line-height: 15px;
 }
 
 /* contact */
