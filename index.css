@@ -236,7 +236,7 @@ a {
   }
 
   .container-xl {
-    max-width: 100%;
+    max-width: 1280px;
     padding: 2px;
   }
 
@@ -283,8 +283,8 @@ a {
   }
 
   .hero img {
-    block-size: 50%;
-    object-fit: cover;
+    /* block-size: 50%; */
+    /* object-fit: cover; */
   }
 
   .header {
@@ -301,6 +301,7 @@ a {
     flex-wrap: wrap;
     --webkit-box-pack: justify;
     justify-content: space-between;
+    padding: 1rem;
   }
 
   .main-content {
@@ -390,6 +391,7 @@ a {
 
 
 }
+ 
 
 @media screen and (min-width: 64em) {
 
