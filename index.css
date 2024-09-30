@@ -16,6 +16,10 @@ body {
   text-decoration: none;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -46,7 +50,8 @@ a {
   --fs-2: 2rem;
   --fs-3: 3rem;
   --fs-3-5: 3.5rem;
-  --fw-600: 600;
+  --fs-4: 4rem;
+  --fw-500: 500;
   --font-family: "Montserrat", sans-serif;
   --color-black: #000;
   --color: #fff;
@@ -58,6 +63,33 @@ a {
   --bg-color: #00a7a5;
   --bg-color: #50b99a;
   --type-article-p-0-7-5: 0.75rem;
+  --type-heading-1: 1.8rem;
+  --type-heading-2: 1.6rem;
+  --type-heading-3: 2rem;
+  --type-article-p: 1rem;
+  --margin-tb-8: 2rem 0;
+  --type-article-p-2: 1.5rem;
+  --type-heading-1: 1rem;
+  --type-heading-2: 2rem;
+  --type-heading-3: 2.5rem;
+  --type-article-p: 1rem;
+  --margin-tb-8: 2rem 0;
+  --margin-xxs: .25rem;
+  --margin-xs: .5rem;
+  --margin-s: .75rem;
+  --margin-m: 1rem;
+  --margin-l: 1.25rem;
+  --margin-xl: 1.75rem;
+  --margin-xxl: 2.5rem;
+  --line-height-h1: 1.2rem;
+  --line-height-s: 1rem;
+  --line-height-p: 1.6rem;
+  --line-height-xs-p: 2rem;
+  --type-article-p-2: 1.5rem;
+  --type-article-p-1: 1rem;
+  --type-article-p-0-7-5: 0.75rem;
+  --accent-color: hsla(0, 96%, 52%, 0.718);
+
 }
 
 @media screen and (min-width: 20em) {
@@ -89,6 +121,7 @@ a {
     max-width: 100%;
     padding: 5px;
   }
+
   .container-xl {
     max-width: 100%;
     padding: 2px;
@@ -117,7 +150,7 @@ a {
   }
 
   .hero {
-    padding: 30px;
+    padding: 16px;
   }
 
   .nav-links a {
@@ -125,6 +158,7 @@ a {
     gap: 20px;
     font-size: var(--fs-0-5);
   }
+
   .contact-icon img {
     width: 10px;
     height: auto;
@@ -143,10 +177,11 @@ a {
     height: 125px;
     top: 302px;
   }
+
   .phone-num {
     font-size: 45px;
   }
-  
+
   .app-container {
     display: flex;
     flex-direction: column;
@@ -157,7 +192,7 @@ a {
   }
 
 
-  .app  img {
+  .app img {
     max-width: 100px;
   }
 
@@ -170,7 +205,7 @@ a {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
     padding-top: 0.75rem;
-    padding-bottom:0.75rem;
+    padding-bottom: 0.75rem;
     margin: 0;
     border-radius: 0.5px;
   }
@@ -215,33 +250,50 @@ a {
     padding: var(--padding-08);
   }
 
+
   .logo img {
     max-width: 70px;
-   
-    
+
+
   }
 
   .contact-info {
-    justify-content: flex-start;
-    gap: 70px;
+    justify-content: start;
+    margin-top: 16px;
+   
   }
 
   .contact-icon {
     width: 30px;
   }
 
+  .hero {
+    display: flex;
+    margin: var(--margin-l);
+    padding: 4px;
+  }
+
+  .hero h1 {
+  
+    font-size: var(--fs-1);
+    line-height: var(--line-height-s);
+    padding-top: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .hero img {
+    block-size: 50%;
+    object-fit: cover;
+  }
+
   .header {
     width: 100%;
   }
 
-  .hero {
-    width: 100%;
-    height: 48em;
-  }
 
-  .hero::after {
-    height: 50px;
-  }
+
+  /* ******** */
 
 
   .main-section {
@@ -262,10 +314,11 @@ a {
     align-items: center;
   }
 
-  .contact, 
+  .contact,
   .custom-form {
     flex: 1 1 50%;
   }
+
   .heading-contact {
     font-size: var(--fs-3-5);
   }
@@ -303,10 +356,10 @@ a {
   }
 
   .footer-logo img {
-     max-width: 150px;
+    max-width: 150px;
   }
 
-  .app img{
+  .app img {
     max-width: 150px;
   }
 
@@ -333,12 +386,36 @@ a {
     font-size: var(--fs-1);
   }
 
-  
+
 
 
 }
 
 @media screen and (min-width: 64em) {
+
+  .hero {
+    display: flex;
+    justify-content: space-evenly;
+    margin: var(--margin-xxl);
+    padding: 4px;
+  }
+
+  .hero h1 {
+    text-align: left;
+    font-size: --;
+  }
+
+  .hero img {
+    inline-size: 50%;
+    block-size: 50%;
+    object-fit: cover;
+  }
+
+  .hero h1 img {
+    flex: 1;
+  }
+
+
   .formal-info p {
     font-size: var(--fs-1-5);
   }
@@ -350,8 +427,21 @@ a {
 
 
 @media screen and (min-width: 160em) {
-  
 
+
+  .paragraph {
+    line-height: var(--line-height-p);
+    text-align: left;
+  }
+
+  .hero {
+
+  }
+
+  .hero h1 {
+    text-align: left;
+    font-size: var(--fs-4);
+  }
 
   .footer-container {
     margin-bottom: 45px;
@@ -367,6 +457,3 @@ a {
   }
 
 }
-
-
-

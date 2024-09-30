@@ -44,6 +44,8 @@ const handleEmailSubmission = (e) => {
 
     return;
   } 
+  
+  
 
 
   // validate data
