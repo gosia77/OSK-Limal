@@ -145,13 +145,12 @@ li, a {
 /* hero */
 
 .hero {
-  position: relative;
+  /* position: relative; */
   /* background-image: url(gallery/skoda.jpg); */
- max-width: 100%;
+ /* max-width: 100%;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  background-position: center; */
+  /* background-repeat: no-repeat; */
   padding-top: 100px;
   overflow: hidden;
 }
