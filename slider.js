@@ -28,7 +28,8 @@ for (const slide of slides) {
     imgNode.alt = slide.alt;
 
     slideNode.appendChild(imgNode)
+    fragment.appendChild(slideNode);
 
-    swiperWrapper.appendChild(slideNode);
+    swiperWrapper.appendChild(fragment);
 }
 
