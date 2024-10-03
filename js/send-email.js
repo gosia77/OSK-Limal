@@ -45,16 +45,6 @@ const handleEmailSubmission = (e) => {
     return;
   } 
   
-  
-
-
-  // validate data
-  // ...zapobiec wstawianiu niepotrzebnych znaków
-  // walidacja pl nr
-  // walidacja pustych wartosci
-  // walidacja poprawności maila
-  // walidacja maksymalnej liczby znakow
-
 
   // send email
   sendEmail(email, phone, message);
@@ -187,7 +177,6 @@ function emitEmailIsSending() {
   // wysylanie eventu
   document.dispatchEvent(errorEvent);
 }
-
 
 document.querySelector("button[type='submit']").addEventListener('click', (e) => {
   handleEmailSubmission(e);

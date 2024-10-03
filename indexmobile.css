@@ -33,7 +33,6 @@ li, a {
     --fs-1: 1rem;
     --fs-1-5: 1.5rem;
     --fs-2: 2rem;
-    
     --fw-600: 600;
     --color-black: #000;
     --color-white: #fff;
@@ -43,10 +42,7 @@ li, a {
     --bg-color-dark: #141414;
     --color-grey:#808080;
     --color-dark-grey: #231F20;
-
-   
     --bg-clolor7: hsla(231, 50%, 40%, 0.866);
-
     --margin-tb-8: 2rem 0;
 }
 
@@ -68,8 +64,6 @@ li, a {
   width: 100%;
   z-index: 1000;
 }
-
-  
 
 .header .logo img {
     line-height: 60px;
@@ -113,7 +107,6 @@ li, a {
   display: flex;
   align-items: center;
   color: var(--color-dark-grey);
-  
 }
 
 .contact-icon {
@@ -126,7 +119,6 @@ li, a {
   position: fixed;
   right: 16px;
   padding: 10px;
-  /* background-color: red; */
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
   -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
@@ -149,40 +141,15 @@ li, a {
   background-color: transparent;
   padding: 2px;
   cursor: pointer;
-  border: none;
-  
+  border: none; 
 }
 
 /* hero */
-
-.hero {
-  /* position: relative; */
-  /* background-image: url(gallery/skoda.jpg); */
- /* max-width: 100%;
-  background-size: cover;
-  background-position: center; */
-  /* background-repeat: no-repeat; */
-  padding-top: 100px;
-  overflow: hidden;
-}
-
-/* .hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px; /* Wysokość rozmytego obszaru */
-  /* background: linear-gradient(hsla(0, 1%, 47%, 0) 5%, #fff 100%);
-  backdrop-filter: blur(5px); /* Intensywność rozmycia */
-  /* background-color: hsl(0, 0%, 100%, 0.1); */ */
-} */
 
 .hero h1 {
   font-family: var(--ff-prime);
   text-align: center;
   color: var(--color-dark-grey);
- 
 }
 
 .heading-1 span {
@@ -210,8 +177,7 @@ li, a {
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .nav-links a {
@@ -222,7 +188,6 @@ li, a {
 .nav-links li {
     position: sticky;
     cursor: pointer;
-   
 }
 
 
@@ -232,7 +197,6 @@ li, a {
 .slang h2 {
   color: var(--color-white);
   position: absolute;
-
 }
 
 .slang strong {
@@ -240,10 +204,6 @@ li, a {
 }
 
 /* main */
-
-.main-container {
-  
-}
 
 .main-content {
   display: flex;
@@ -275,10 +235,6 @@ li, a {
   scroll-margin-top: 120px; /* Dostosuj wartość w zależności od wysokości nagłówka */
 }
 
-
-
-
-
 /* swiper slide */
 .swiper {
   width: 100%;
@@ -302,9 +258,6 @@ li, a {
 }
 
 /* footer */
-
-
-
 .app {
   display: flex;
   flex-direction: column;
@@ -345,7 +298,6 @@ li, a {
 }
 
 .app-links a {
-
   cursor: pointer;
 }
 
@@ -362,7 +314,6 @@ li, a {
 /* app section */
 .apps {
   display: flex;
-  
 } 
 
 .apps a {
@@ -437,9 +388,6 @@ li, a {
   outline: none; 
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
-
-
-
 
 .custom-form button {
     width: 100%; 
