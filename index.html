@@ -50,7 +50,12 @@
 
 <body>
     <div class=" scroll-arrow">
-        <img src="image/down.png" alt="strzałka do przewijania" loading="lazy">
+        <img src="image/down.png" srcset="
+        image/down-small.png 500w, 
+        image/down-medium.png 1000w, 
+        image/down-large.png 1500w" sizes="(min-width: 1200px) 1500px, 
+             (min-width: 600px) 1000px, 
+             500px" alt="strzałka do przewijania" loading="lazy">
     </div>
     <div class="header-section">
         <div class="header container">
