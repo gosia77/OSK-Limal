@@ -1,6 +1,6 @@
 const slides = [{
     srcset:`
-      gallery/skoda-320wtest.jpg 320w,
+      gallery/skoda-320w.jpg 320w,
       gallery/skoda-480w.jpg 480w,
       gallery/skoda-640w.jpg 640w`,
     path: 'gallery/skoda.jpg',
