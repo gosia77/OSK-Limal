@@ -46,6 +46,10 @@ for (const slide of slides) {
     imgNode.sizes = "(max-width:320px) 280px, (max-width: 480px) 440px, 640px";
     imgNode.loading = 'lazy';
 
+    imgNode.onerror = () => {
+      imgNode.src = 'gallery/default.jpg';
+    }
+
     slideNode.appendChild(imgNode)
 
     swiperWrapper.appendChild(slideNode);
