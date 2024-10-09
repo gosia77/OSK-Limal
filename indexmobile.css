@@ -4,86 +4,50 @@ html {
 }
 
 img,
-svg, png {
+svg,
+png {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
 ul,
-li, a {
+li,
+a {
   list-style-type: none;
   padding: 0;
   margin: 0;
   text-decoration: none;
 }
 
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* typography */
 
 :root {
-    --ff-prime: "Roboto", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
-    --fs-0-5: 10px;
-    --fs-1: 1rem;
-    --fs-1-5: 1.5rem;
-    --fs-2: 2rem;
-    --fw-600: 600;
-    --color-black: #000;
-    --color-white: #fff;
-    --bg-color-lightgrey: #EDF2F7;
-    --bg-color-0: #007dbf;
-    --bg-color-0hover: #0276b4;
-    --bg-color-dark: #141414;
-    --color-grey:#808080;
-    --color-dark-grey: #231F20;
-    --bg-clolor7: hsla(231, 50%, 40%, 0.866);
-    --margin-tb-8: 2rem 0;
-}
-
-/* header section */
-
-.header-section {
-  background-position: 50% 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 60px;
-}
-
-.header {
-  background-color: var(--color-white);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.header .logo img {
-    line-height: 60px;
-    width: 100px;
-    height: auto;
-    display: inline-block;
-    padding: 5px;
-}
-
-.header::after {
-  content: '';
-  display: table;
-  clear: both;
+  --ff-prime: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --fs-0-5: 10px;
+  --fs-1: 1rem;
+  --fs-1-5: 1.5rem;
+  --fs-2: 2rem;
+  --fw-600: 600;
+  --color-black: #000;
+  --color-white: #fff;
+  --bg-color-lightgrey: #edf2f7;
+  --bg-color-0: #007dbf;
+  --bg-color-0hover: #0276b4;
+  --bg-color-dark: #141414;
+  --color-grey: #808080;
+  --color-dark-grey: #231f20;
+  --bg-clolor7: hsla(231, 50%, 40%, 0.866);
+  --margin-tb-8: 2rem 0;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 16px;
+  height: 48px;
 }
 
 .contact-info img {
@@ -118,6 +82,7 @@ li, a {
 .scroll-arrow {
   position: fixed;
   right: 16px;
+  cursor: pointer;
   padding: 10px;
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
@@ -126,7 +91,7 @@ li, a {
   border-radius: 50px;
   bottom: 16px;
   z-index: 1000;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 .scroll-arrow > img {
@@ -141,17 +106,10 @@ li, a {
   background-color: transparent;
   padding: 2px;
   cursor: pointer;
-  border: none; 
+  border: none;
 }
 
 /* hero */
-
-.hero h1 {
-  font-family: var(--ff-prime);
-  text-align: center;
-  color: var(--color-dark-grey);
-}
-
 .heading-1 span {
   color: var(--bg-color-0);
 }
@@ -166,32 +124,6 @@ li, a {
   line-height: 25px;
 }
 
-/* navigation */
-.navigation-wrapper {
- padding: 8px 16px;
- margin: 5px;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;  
-}
-
-.nav-links a {
-  color: var(--color-dark-grey);
-  font-size: 12px;
-}
-
-.nav-links li {
-    position: sticky;
-    cursor: pointer;
-}
-
-
-
 /*  */
 
 .slang h2 {
@@ -203,36 +135,36 @@ li, a {
   color: red;
 }
 
-/* main */
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .card-content {
   margin: var(--margin-tb-8);
+  max-width: 320px;
 }
 
 .main-card {
- 
   max-width: 80px;
   height: auto;
   background-color: var(--color-white);
-  -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  border-radius: 10px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section .heading-1 {
+  margin-bottom: 32px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .main-card img {
-  max-width: 80px;
-}
-
-#O_nas, #Oferta, #Szkolenia, #Niezbędnik, #Galeria, #Kontakt {
-  scroll-margin-top: 120px; /* Dostosuj wartość w zależności od wysokości nagłówka */
+  max-height: 80px;
 }
 
 /* swiper slide */
@@ -261,8 +193,8 @@ li, a {
 .app {
   display: flex;
   flex-direction: column;
- gap: 5px;
- padding-top: 10px;
+  gap: 5px;
+  padding-top: 10px;
 }
 
 .app img {
@@ -286,6 +218,7 @@ li, a {
   text-align: center;
   font-size: var(--fs-0-5);
   border: 0.15px solid var(--bg-color-lightgrey);
+  height: 100%;
 }
 
 .tapo24 p {
@@ -294,7 +227,6 @@ li, a {
 
 .app-links img {
   max-width: 100px;
-
 }
 
 .app-links a {
@@ -306,7 +238,7 @@ li, a {
 .app-links {
   -webkit-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
   -moz-box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
-  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);;
+  box-shadow: 0px 8px 24px 0px rgba(202, 203, 216, 1);
   max-width: 400px;
   padding: 20px;
 }
@@ -314,7 +246,7 @@ li, a {
 /* app section */
 .apps {
   display: flex;
-} 
+}
 
 .apps a {
   flex: 1 1 20%;
@@ -338,16 +270,18 @@ li, a {
 
 .contact {
   position: relative;
+  padding: 0 16px;
 }
 
 .circle {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   border-radius: 9999px;
   background-color: var(--bg-color-0);
   position: absolute;
   z-index: -1;
- top: 310px;
+  top: -35px;
+  right: 40px;
 }
 
 .bg-blue {
@@ -380,24 +314,24 @@ li, a {
   border: none;
   border-radius: 3px;
   background-color: var(--bg-color-lightgrey);
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   color: var(--bg-color-dark);
 }
 
 .custom-form input:focus {
-  outline: none; 
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .custom-form button {
-    width: 100%; 
-    padding: 10px;
-    font-size: 1em; 
-    background-color: var(--bg-color-0); 
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  background-color: var(--bg-color-0);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .custom-form button:hover {
@@ -432,17 +366,35 @@ li, a {
   /* padding-top: 4px; */
 }
 
-.bg-dark p {
-  font-size: var(--fs-0-5);
+.footer-logo {
+  padding: 16px;
 }
 
+.formal-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: var(--fs-1-5);
+}
 
+.hero {
+  display: flex;
+  padding: 16px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  min-height: calc(300px);
+  background: url("./gallery/skoda-640W.jpg") center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
 
-
-
-
-
-
-
-
-
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}

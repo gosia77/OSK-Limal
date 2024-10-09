@@ -6,14 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  color-scheme: light dark;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: montserrat;
-}
-
 html {
   scroll-snap-type: y mandatory;
 }
@@ -39,51 +31,17 @@ a {
   color: var(--color-black);
 }
 
-/* typography */
+.apps {
+  margin: 32px 0;
+}
 
-:root {
-  --fs-0-5: 0.5rem;
-  --fs-1: 1rem;
-  --fs-1-5: 1.5ren;
-  --fs-2: 2rem;
-  --fs-3: 3rem;
-  --fs-3-5: 3.5rem;
-  --fs-4: 4rem;
-  --fw-500: 500;
-  --font-family: "Montserrat", sans-serif;
-  --color-black: #000;
-  --color: #fff;
-  --padding-08: 8px;
-  --bg-clolor: #334297;
-  --bg-color: #0061ae;
-  --bg-color: #007bb6;
-  --bg-color: #0092b1;
-  --bg-color: #00a7a5;
-  --bg-color: #50b99a;
-  --type-article-p-0-7-5: 0.75rem;
-  --type-heading-1: 1.8rem;
-  --type-heading-2: 1.6rem;
-  --type-heading-3: 1.4rem;
-  --type-article-p: 1rem;
-  --margin-tb-8: 2rem 0;
-  --type-article-p-2: 1.5rem;
-  --type-article-p: 1rem;
-  --margin-tb-8: 2rem 0;
-  --margin-xxs: 0.25rem;
-  --margin-xs: 0.5rem;
-  --margin-s: 0.75rem;
-  --margin-m: 1rem;
-  --margin-l: 1.25rem;
-  --margin-xl: 1.75rem;
-  --margin-xxl: 2.5rem;
-  --line-height-h1: 1.2rem;
-  --line-height-s: 1rem;
-  --line-height-p: 1.6rem;
-  --line-height-xs-p: 2rem;
-  --type-article-p-2: 1.5rem;
-  --type-article-p-1: 1rem;
-  --type-article-p-0-7-5: 0.75rem;
-  --accent-color: hsla(0, 96%, 52%, 0.718);
+.app-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  padding-bottom: 12px;
 }
 
 @media screen and (min-width: 20em) {
@@ -99,124 +57,47 @@ a {
     padding: 2px;
   }
 
-  .contact-info {
-    gap: 10px;
-  }
-
   .app-container {
     flex-direction: column;
   }
 }
 
-@media screen and (min-width: 23em) {
-  .container {
-    max-width: 100%;
-    padding: 5px;
+@media screen and (min-width: 1020px) {
+  .card-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  .container-xl {
-    max-width: 100%;
-    padding: 2px;
+  .about-section .heading-1 {
+    margin-bottom: 76px;
   }
 
-  .logo {
-    max-width: 75px;
+  .app-content {
+    flex-direction: row;
+    align-items: center;
   }
 
-  .header-section {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .main-content img {
-    max-width: 80px;
-  }
-
-  .main-card {
-    max-width: 80px;
-  }
-
-  .paragraph {
-    font-size: var(--type-article-p-0-5);
-  }
-
-  .hero {
-    padding: 16px;
-  }
-
-  .nav-links a {
-    justify-content: space-between;
+  .apps {
+    flex: 1 1 50%;
+    flex-direction: column;
+    margin-left: 128px;
     gap: 20px;
-    font-size: var(--fs-0-5);
   }
 
-  .contact-icon img {
-    width: 10px;
-    height: auto;
-  }
-
-  .contact-info {
-    gap: 30px;
+  .apps .tapo24 {
+    width: 200px;
+    height: 61px;
   }
 
   .circle {
-    width: 125px;
-    height: 125px;
-    top: 302px;
-  }
-
-  .phone-num {
-    font-size: 45px;
-  }
-
-  .app-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .app {
-    flex-direction: column;
-  }
-
-  .app img {
-    max-width: 100px;
-  }
-
-  .tapo24 {
-    max-width: 100px;
-  }
-
-  .tapo24 p {
-    font-size: 15px;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    margin: 0;
-    border-radius: 0.5px;
-  }
-
-  .app-content .paragraph-2 {
-    font-size: var(--type-article-p-0-7-5);
-  }
-
-  .accent {
-    color: var(--bg-color-0);
+    width: 140px;
+    height: 140px;
+    top: -70px;
+    left: -70px;
   }
 }
 
-@media screen and (min-width: 48em) {
-  .container {
-    max-width: 100%;
-    padding: 16px;
-  }
-
-  .container-xl {
-    max-width: 1280px;
-    padding: 2px;
-  }
-
+@media screen and (min-width: 1280px) {
   .contact-info li {
     font-size: var(--fs-1);
     padding: var(--padding-08);
@@ -231,39 +112,23 @@ a {
     max-width: 70px;
   }
 
-  .contact-info {
-    justify-content: center;
-    margin-top: 16px;
-  }
-
   .contact-icon {
     width: 30px;
   }
 
   .hero {
     display: flex;
-    margin: var(--margin-l);
     padding: 4px;
-  }
-
-  .hero h1 {
-    font-size: var(--fs-1);
-    line-height: var(--line-height-s);
-    padding-top: 1rem;
-    text-align: left;
-    word-wrap: break-word;
+    padding-top: 120px;
+    min-height: calc(100vh - 120px);
+    background: url("./gallery/skoda.jpg") center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
   }
 
   .header {
     width: 100%;
-  }
-
-  .main-section {
-    display: flex;
-    flex-wrap: wrap;
-    --webkit-box-pack: justify;
-    justify-content: space-between;
-    padding: 1rem;
   }
 
   .main-content {
@@ -290,17 +155,9 @@ a {
     line-height: 25px;
   }
 
-  .paragraph-2 {
-    padding-bottom: 10px;
-  }
-
   .app-container {
     display: flex;
     flex-direction: row;
-  }
-
-  .circle {
-    top: 345px;
   }
 
   .bg-dark {
@@ -326,7 +183,7 @@ a {
   }
 
   .tapo24 {
-    max-width: 150px;
+    width: 150px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -339,66 +196,25 @@ a {
     font-size: 46px;
   }
 
-  .formal-info {
-    display: flex;
-    gap: 1rem;
-  }
-
   .contact-info a {
     font-size: var(--fs-1);
   }
 }
- 
 
-@media screen and (min-width: 64em) {
-  .hero {
-    display: flex;
-    justify-content: space-evenly;
-    margin: var(--margin-xxl);
-    padding: 4px;
-  }
-
-  .hero h1 {
-    text-align: left;
-  }
-
-  .hero img {
-    inline-size: 50%;
-    block-size: 50%;
-    object-fit: cover;
-  }
-
-  .hero h1 img {
-    flex: 1;
-  }
-
-  .formal-info p {
-    font-size: var(--fs-1-5);
-  }
-
+@media screen and (min-width: 1280px) {
   .app {
     padding-top: 100px;
+  }
+
+  .hero {
+    display: flex;
+    align-items: flex-start;
   }
 }
 
 @media screen and (min-width: 160em) {
-  .paragraph {
-    line-height: var(--line-height-p);
-    text-align: left;
-  }
-
-
-  .hero h1 {
-    text-align: left;
-    font-size: var(--fs-4);
-  }
-
   .footer-container {
     margin-bottom: 45px;
-  }
-
-  .circle {
-    top: 290px;
   }
 
   .formal-info p {
@@ -406,5 +222,3 @@ a {
     padding-right: 16px;
   }
 }
-
-

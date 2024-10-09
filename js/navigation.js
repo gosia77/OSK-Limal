@@ -1,3 +1,15 @@
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.addEventListener("click", () => {
+  toggleNav(hamburger);
+});
+
+const toggleNav = (hamburger) => {
+  const nav = document.querySelector(".navigation");
+  nav.classList.toggle("navigation--open");
+  hamburger.classList.toggle("hamburger--open");
+};
+
 const selectActiveNavItem = (element) => {
   const hash = window.location.hash;
 
@@ -18,6 +30,7 @@ selectActiveNavItem();
 
 document.querySelectorAll(".nav-links a").forEach((element) => {
   element.addEventListener("click", () => {
+    toggleNav(hamburger);
     document.querySelectorAll(".nav-links a").forEach((el) => {
       el.dataset.active = 0;
     });
