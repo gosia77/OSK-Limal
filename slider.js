@@ -1,32 +1,32 @@
 const slides = [{
     srcset:`
-      gallery/skoda-320w.jpg 320w,
-      gallery/skoda-480w.jpg 480w,
-      gallery/skoda-640w.jpg 640w`,
+      gallery/skoda-320w.jpg,
+      gallery/skoda-480w.jpg,
+      gallery/skoda-640w.jpg`,
     path: 'gallery/skoda.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {
     srcset:`
-      gallery/skoda2-320w.jpg 320w,
-      gallery/skoda2-480w.jpg 480w,
-      gallery/skoda2-640w.jpg 640w`,
+      gallery/skoda2-320w.jpg,
+      gallery/skoda2-480w.jpg,
+      gallery/skoda2-640w.jpg`,
     path: 'gallery/skoda2.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {
     srcset:`
-      gallery/plac-320w.jpg 320w,
-      gallery/plac-480w.jpg 480w,
-      gallery/plac-640w.jpg 640w`,
+      gallery/plac-320w.jpg,
+      gallery/plac-480w.jpg,
+      gallery/plac-640w.jpg`,
     path: 'gallery/plac.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
   {
     srcset:`
-      gallery/plac2-320w.jpg 320w,
-      gallery/plac2-480w.jpg 480w,
-      gallery/plac2-640w.jpg 640w`,
+      gallery/plac2-320w.jpg,
+      gallery/plac2-480w.jpg,
+      gallery/plac2-640w.jpg`,
     path: 'gallery/plac2.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
   },
