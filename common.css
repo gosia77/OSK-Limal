@@ -1,16 +1,15 @@
 :root {
-  --type-sm-heading-1: 1.4rem;
-  --type-sm-heading-2: 1.2rem;
+  --type-sm-heading-1: 1.8rem;
+  --type-sm-heading-2: 1.4rem;
   --type-sm-heading-3: 1rem;
 
   --type-xl-heading-1: 4.8rem;
-  --type-xl-heading-2: 2rem;
+  --type-xl-heading-2: 2.4rem;
   --type-xl-article-p: 1.2rem;
 
-  --type-article-p: 2.4rem;
+  --type-article-p: 1.2rem;
   --margin-tb-8: 2rem 0;
   --type-article-p-2: 1.5rem;
-  --type-article-p: 1rem;
   --margin-tb-8: 2rem 0;
   --margin-xxs: 0.25rem;
   --margin-xs: 0.5rem;
@@ -34,6 +33,10 @@ html,
 body {
   font-size: 16px;
   width: 100%;
+}
+
+p {
+  margin: 0;
 }
 
 body {
@@ -76,16 +79,7 @@ body {
 .paragraph {
   font-size: var(--type-article-p);
   word-wrap: break-word;
-  line-height: 1.4rem;
-}
-
-.paragraph-2 {
-  font-size: var(--type-article-p-1);
-  line-height: 25px;
-  font-weight: 400;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  word-wrap: break-word;
+  line-height: 1.6rem;
 }
 
 .popup-container {
@@ -124,6 +118,10 @@ body {
   z-index: 50;
 }
 
+.text-center {
+  text-align: center;
+}
+
 hr {
   display: block;
   width: 4rem;
@@ -149,6 +147,14 @@ hr {
   padding: 1.2rem 2.4rem;
   cursor: pointer;
   outline: none;
+}
+
+.section {
+  padding: 60px 16px;
+}
+
+.relative {
+  position: relative;
 }
 
 @media screen and (min-width: 640px) {
@@ -194,6 +200,10 @@ hr {
   .container {
     max-width: 1280px;
     margin: 0 auto;
+  }
+
+  .section {
+    padding: 120px 0;
   }
 }
 

@@ -21,10 +21,6 @@
 
 /* header section */
 
-.header-section {
-  height: 64px;
-}
-
 .header {
   background-color: var(--color-white);
   position: fixed;
@@ -154,7 +150,7 @@
     transform: translateX(0);
     position: static;
     box-shadow: none;
-    max-width: 600px;
+    max-width: 500px;
     padding: 0;
   }
 

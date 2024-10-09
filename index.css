@@ -31,14 +31,17 @@ a {
   color: var(--color-black);
 }
 
-.hero {
+.apps {
+  margin: 32px 0;
+}
+
+.app-content {
   display: flex;
-  padding: 4px;
-  min-height: calc(300px);
-  background: url("./gallery/skoda-640W.jpg") center;
-  background-size: cover;
-  width: 100%;
-  position: relative;
+  flex-direction: column;
+}
+
+.form-label {
+  padding-bottom: 12px;
 }
 
 @media screen and (min-width: 20em) {
@@ -59,71 +62,38 @@ a {
   }
 }
 
-@media screen and (min-width: 23em) {
-  .logo {
-    max-width: 75px;
+@media screen and (min-width: 1020px) {
+  .card-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  .main-content img {
-    max-width: 80px;
+  .about-section .heading-1 {
+    margin-bottom: 76px;
   }
 
-  .main-card {
-    max-width: 80px;
+  .app-content {
+    flex-direction: row;
+    align-items: center;
   }
 
-  .hero {
-    padding: 16px;
+  .apps {
+    flex: 1 1 50%;
+    flex-direction: column;
+    margin-left: 128px;
+    gap: 20px;
   }
 
-  .contact-icon img {
-    width: 10px;
-    height: auto;
+  .apps .tapo24 {
+    width: 200px;
+    height: 61px;
   }
 
   .circle {
-    width: 125px;
-    height: 125px;
-    top: 302px;
-  }
-
-  .phone-num {
-    font-size: 45px;
-  }
-
-  .app-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .app {
-    flex-direction: column;
-  }
-
-  .app img {
-    max-width: 100px;
-  }
-
-  .tapo24 {
-    max-width: 100px;
-  }
-
-  .tapo24 p {
-    font-size: 15px;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    margin: 0;
-    border-radius: 0.5px;
-  }
-
-  .app-content .paragraph-2 {
-    font-size: var(--type-article-p-0-7-5);
-  }
-
-  .accent {
-    color: var(--bg-color-0);
+    width: 140px;
+    height: 140px;
+    top: -70px;
+    left: -70px;
   }
 }
 
@@ -148,8 +118,8 @@ a {
 
   .hero {
     display: flex;
-    margin-top: 40px;
     padding: 4px;
+    padding-top: 120px;
     min-height: calc(100vh - 120px);
     background: url("./gallery/skoda.jpg") center;
     background-size: cover;
@@ -157,25 +127,8 @@ a {
     position: relative;
   }
 
-  .hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
   .header {
     width: 100%;
-  }
-
-  .main-section {
-    display: flex;
-    flex-wrap: wrap;
-    --webkit-box-pack: justify;
-    justify-content: space-between;
-    padding: 1rem;
   }
 
   .main-content {
@@ -202,17 +155,9 @@ a {
     line-height: 25px;
   }
 
-  .paragraph-2 {
-    padding-bottom: 10px;
-  }
-
   .app-container {
     display: flex;
     flex-direction: row;
-  }
-
-  .circle {
-    top: 345px;
   }
 
   .bg-dark {
@@ -238,7 +183,7 @@ a {
   }
 
   .tapo24 {
-    max-width: 150px;
+    width: 150px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -251,21 +196,12 @@ a {
     font-size: 46px;
   }
 
-  .formal-info {
-    display: flex;
-    gap: 1rem;
-  }
-
   .contact-info a {
     font-size: var(--fs-1);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .formal-info p {
-    font-size: var(--fs-1-5);
-  }
-
   .app {
     padding-top: 100px;
   }
@@ -279,10 +215,6 @@ a {
 @media screen and (min-width: 160em) {
   .footer-container {
     margin-bottom: 45px;
-  }
-
-  .circle {
-    top: 290px;
   }
 
   .formal-info p {
