@@ -29,8 +29,7 @@ const slides = [{
       gallery/plac2-640w.jpg`,
     path: 'gallery/plac2.jpg',
     alt: 'Ośrodek Szkolenia Kierowców LimaL'
-  },
-  
+  }, 
 ];
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
