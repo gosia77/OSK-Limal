@@ -6,14 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  color-scheme: light dark;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: montserrat;
-}
-
 html {
   scroll-snap-type: y mandatory;
 }
@@ -39,51 +31,14 @@ a {
   color: var(--color-black);
 }
 
-/* typography */
-
-:root {
-  --fs-0-5: 0.5rem;
-  --fs-1: 1rem;
-  --fs-1-5: 1.5ren;
-  --fs-2: 2rem;
-  --fs-3: 3rem;
-  --fs-3-5: 3.5rem;
-  --fs-4: 4rem;
-  --fw-500: 500;
-  --font-family: "Montserrat", sans-serif;
-  --color-black: #000;
-  --color: #fff;
-  --padding-08: 8px;
-  --bg-clolor: #334297;
-  --bg-color: #0061ae;
-  --bg-color: #007bb6;
-  --bg-color: #0092b1;
-  --bg-color: #00a7a5;
-  --bg-color: #50b99a;
-  --type-article-p-0-7-5: 0.75rem;
-  --type-heading-1: 1.8rem;
-  --type-heading-2: 1.6rem;
-  --type-heading-3: 1.4rem;
-  --type-article-p: 1rem;
-  --margin-tb-8: 2rem 0;
-  --type-article-p-2: 1.5rem;
-  --type-article-p: 1rem;
-  --margin-tb-8: 2rem 0;
-  --margin-xxs: 0.25rem;
-  --margin-xs: 0.5rem;
-  --margin-s: 0.75rem;
-  --margin-m: 1rem;
-  --margin-l: 1.25rem;
-  --margin-xl: 1.75rem;
-  --margin-xxl: 2.5rem;
-  --line-height-h1: 1.2rem;
-  --line-height-s: 1rem;
-  --line-height-p: 1.6rem;
-  --line-height-xs-p: 2rem;
-  --type-article-p-2: 1.5rem;
-  --type-article-p-1: 1rem;
-  --type-article-p-0-7-5: 0.75rem;
-  --accent-color: hsla(0, 96%, 52%, 0.718);
+.hero {
+  display: flex;
+  padding: 4px;
+  min-height: calc(300px);
+  background: url("./gallery/skoda-640W.jpg") center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
 }
 
 @media screen and (min-width: 20em) {
@@ -99,34 +54,14 @@ a {
     padding: 2px;
   }
 
-  .contact-info {
-    gap: 10px;
-  }
-
   .app-container {
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 23em) {
-  .container {
-    max-width: 100%;
-    padding: 5px;
-  }
-
-  .container-xl {
-    max-width: 100%;
-    padding: 2px;
-  }
-
   .logo {
     max-width: 75px;
-  }
-
-  .header-section {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .main-content img {
@@ -137,10 +72,6 @@ a {
     max-width: 80px;
   }
 
-  .paragraph {
-    font-size: var(--type-article-p-0-5);
-  }
-
   .hero {
     padding: 16px;
   }
@@ -148,10 +79,6 @@ a {
   .contact-icon img {
     width: 10px;
     height: auto;
-  }
-
-  .contact-info {
-    gap: 30px;
   }
 
   .circle {
@@ -200,17 +127,7 @@ a {
   }
 }
 
-@media screen and (min-width: 48em) {
-  .container {
-    max-width: 100%;
-    padding: 16px;
-  }
-
-  .container-xl {
-    max-width: 1280px;
-    padding: 2px;
-  }
-
+@media screen and (min-width: 1280px) {
   .contact-info li {
     font-size: var(--fs-1);
     padding: var(--padding-08);
@@ -225,27 +142,28 @@ a {
     max-width: 70px;
   }
 
-  .contact-info {
-    justify-content: center;
-    margin-top: 16px;
-  }
-
   .contact-icon {
     width: 30px;
   }
 
   .hero {
     display: flex;
-    margin: var(--margin-l);
+    margin-top: 40px;
     padding: 4px;
+    min-height: calc(100vh - 120px);
+    background: url("./gallery/skoda.jpg") center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
   }
 
-  .hero h1 {
-    font-size: var(--fs-1);
-    line-height: var(--line-height-s);
-    padding-top: 1rem;
-    text-align: left;
-    word-wrap: break-word;
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .header {
@@ -343,28 +261,7 @@ a {
   }
 }
 
-@media screen and (min-width: 64em) {
-  .hero {
-    display: flex;
-    justify-content: space-evenly;
-    margin: var(--margin-xxl);
-    padding: 4px;
-  }
-
-  .hero h1 {
-    text-align: left;
-  }
-
-  .hero img {
-    inline-size: 50%;
-    block-size: 50%;
-    object-fit: cover;
-  }
-
-  .hero h1 img {
-    flex: 1;
-  }
-
+@media screen and (min-width: 1280px) {
   .formal-info p {
     font-size: var(--fs-1-5);
   }
@@ -372,19 +269,14 @@ a {
   .app {
     padding-top: 100px;
   }
+
+  .hero {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 160em) {
-  .paragraph {
-    line-height: var(--line-height-p);
-    text-align: left;
-  }
-
-  .hero h1 {
-    text-align: left;
-    font-size: var(--fs-4);
-  }
-
   .footer-container {
     margin-bottom: 45px;
   }

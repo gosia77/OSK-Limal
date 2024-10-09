@@ -11,10 +11,13 @@
     <meta name="author" content="Ośrodek Szkolenia Kierowców LimaL" />
     <meta name="robots" content="index" />
     <meta name="Googlebot" content="index" />
+    <link href="https://fonts.cdnfonts.com/css/clan-pro" rel="stylesheet" />
+
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="indexmobile.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -126,7 +129,7 @@
             </svg>
           </div>
           <nav class="navigation">
-            <ul class="nav-links animate__animated animate__pulse">
+            <ul class="nav-links">
               <li><a href="#O_nas" title="O nas">O nas</a></li>
               <li><a href="#Oferta" title="Oferta">Oferta</a></li>
               <li><a href="#Szkolenia" title="Szkolenia">Szkolenia</a></li>
@@ -183,17 +186,82 @@
             </div>
           </nav>
         </div>
-      </div>
-    </div>
-    <main class="main-container">
-      <div class="hero container">
-        <div>
-          <h1 class="animate__animated animate__fadeInDown heading-1">
-            Ośrodek Szkolenia Kierowców <span class="color-blue">LimaL</span>
-          </h1>
+        <div class="additional-info desktop">
+          <div class="facebook-floating">
+            <a
+              class="social-facebook"
+              title="Nauka jazdy w OSK LimaL Limanowa"
+              target="_blank"
+              rel="norefferrer"
+              href="https://www.facebook.com/profile.php?id=61563162144848"
+            >
+              <img
+                id="facebook"
+                src="image/facebook.png"
+                alt="Facebook Nauka jazdy w OSK LimaL Limanowa"
+                class="contact-icon"
+            /></a>
+          </div>
+          <ul class="contact-info">
+            <li>
+              <a
+                href="tel:+48660026988"
+                title="Ośrodek Szkolenia Kierowców LimaL"
+              >
+                <img
+                  src="image/telephone.png"
+                  alt="Nauka jazdy w OSK LimaL Limanowa"
+                  loading="lazy"
+                  class="contact-icon"
+                />
+                +48660026988</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:osklimal@gmail.com"
+                title="Ośrodek Szkolenia Kierowców LimaL"
+                class="email-img"
+              >
+                <img
+                  src="image/mail.png"
+                  alt="Nauka jazdy w OSK LimaL Limanowa"
+                  loading="lazy"
+                  class="contact-icon"
+                />
+                osklimal@gmail.com</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="main-section container-xl">
+    </div>
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="container z-50">
+        <h1
+          class="animate__animated animate__fadeIn heading-1 invert-color text-box max-w-1-2"
+        >
+          Ośrodek Szkolenia Kierowców <span class="color-blue">LimaL</span>
+        </h1>
+
+        <hr />
+
+        <p class="paragraph invert-color">
+          Zdobądź prawo jazdy kategorii B z doświadczonymi instruktorami, którzy
+          nauczą <br />Cię jeździć bezpiecznie i pewnie. Rozpocznij swoją
+          przygodę za kierownicą już dziś!
+        </p>
+
+        <hr />
+
+        <a href="#Kontakt"
+          ><button class="button">Skontaktuj się z nami</button></a
+        >
+      </div>
+    </div>
+    <main class="container">
+      <div class="main-section">
         <!--  -->
         <div id="O_nas" class="main-content">
           <div class="main-card">
@@ -407,7 +475,7 @@
       </div>
     </footer>
     <!--  -->
-    <div class="bg-dark container-xl">
+    <div class="bg-dark">
       <div class="footer-logo">
         <img
           src="image/Limal1.jpg"

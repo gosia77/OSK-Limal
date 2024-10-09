@@ -18,3 +18,159 @@
 .nav-links {
   gap: 16px;
 }
+
+/* header section */
+
+.header-section {
+  height: 64px;
+}
+
+.header {
+  background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header .logo img {
+  line-height: 60px;
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* navigation */
+.navigation {
+  padding: 32px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: translateX(120%);
+  transition: 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation--open {
+  transform: translateX(0);
+}
+
+.navigation-wrapper {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: var(--color-dark-grey);
+  font-size: 16px;
+}
+
+.nav-links li {
+  position: sticky;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 100%;
+  height: auto;
+}
+
+.hamburger {
+  position: relative;
+  z-index: 100;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.hamburger--open #top,
+.hamburger--open #bottom {
+  opacity: 0;
+}
+
+.hamburger--open .middle-first {
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+.hamburger--open .middle-second {
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.navigation .additional-info {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+  gap: 16px;
+}
+
+.additional-info.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .hamburger {
+    display: none;
+  }
+
+  .additional-info.desktop {
+    display: block;
+    background-color: #c2d5df;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .additional-info.desktop img {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 4px;
+    max-width: 28px;
+  }
+
+  .navigation {
+    transform: translateX(0);
+    position: static;
+    box-shadow: none;
+    max-width: 600px;
+    padding: 0;
+  }
+
+  .header {
+    box-shadow: none;
+  }
+
+  .navigation .additional-info {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .navigation-wrapper {
+    max-height: 64px;
+  }
+}
