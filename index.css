@@ -145,12 +145,6 @@ a {
     padding: 16px;
   }
 
-  .nav-links a {
-    justify-content: space-between;
-    gap: 20px;
-    font-size: var(--fs-0-5);
-  }
-
   .contact-icon img {
     width: 10px;
     height: auto;
@@ -348,7 +342,6 @@ a {
     font-size: var(--fs-1);
   }
 }
- 
 
 @media screen and (min-width: 64em) {
   .hero {
@@ -387,7 +380,6 @@ a {
     text-align: left;
   }
 
-
   .hero h1 {
     text-align: left;
     font-size: var(--fs-4);
@@ -406,5 +398,3 @@ a {
     padding-right: 16px;
   }
 }
-
-

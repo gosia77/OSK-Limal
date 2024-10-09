@@ -1,17 +1,3 @@
-// navigation on a page
-
-document.querySelectorAll(".nav-link").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute("href").substring(1);
-    const targetSection = document.getElementById(targetId);
-    window.scrollTo({
-      top: targetSection.offsetTop,
-      behavior: "smooth",
-    });
-  });
-});
-
 // Galery swiper
 
 var swiper = new Swiper(".mySwiper", {
@@ -26,19 +12,6 @@ var swiper = new Swiper(".mySwiper", {
 
 const scrollArrowClass = ".scroll-arrow";
 const scrollButton = document.querySelector(scrollArrowClass);
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollButton.style.display = "block";
-  } else {
-    scrollButton.style.display = "none";
-  }
-};
 
 scrollButton.addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
