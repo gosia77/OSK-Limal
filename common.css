@@ -233,15 +233,4 @@ hr {
   background-color: #ffe6e6;
 }
 
-.g-recaptcha {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
 
-@media (max-width: 302px) {
-  .g-recaptcha {
-    transform: scale(0.9);
-    transform-origin: center;
-  }
-}
