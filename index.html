@@ -1,25 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kursy i Nauka Jazdy Limanowa - OSK LimaL</title>
+    <link rel="canonical" href="https://osk-limal.vercel.app/" />
+
     <meta
       name="description"
-      content=" Nauka jazdy Limanowa. Szkoła jazdy Limanowa. Szkolenie kierowców limanowa. Prawo jazdy limanowa. Profesjonalne kursy prawa jazdy kategorii B w Limanowej. Nauka jazdy z doświadczonymi instruktorami. Sprawdź ofertę OSK LimaL."
+      content="Nauka jazdy w Limanowej. Profesjonalne kursy prawa jazdy kat. B z doświadczonymi instruktorami. Sprawdź ofertę OSK LimaL."
     />
-    <meta name="keywords" content="kursy prawa jazdy Limanowa." />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     <meta name="author" content="Ośrodek Szkolenia Kierowców LimaL" />
-    <meta name="robots" content="index" />
-    <meta name="Googlebot" content="index" />
-    <link href="https://fonts.cdnfonts.com/css/clan-pro" rel="stylesheet" />
 
+    <!-- Open Graph (po 1 szt. każdego pola, spójne z Twoją stroną) -->
+    <meta
+      property="og:title"
+      content="Kursy i Nauka Jazdy Limanowa - OSK LimaL"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Profesjonalne kursy prawa jazdy kat. B w Limanowej. Nauka jazdy z doświadczonymi instruktorami."
+    />
+    <meta property="og:url" content="https://osk-limal.vercel.app/" />
+    <meta
+      property="og:site_name"
+      content="OSK LimaL - Szkoła Jazdy Limanowa"
+    />
+    <meta
+      property="og:image"
+      content="https://osk-limal.vercel.app/image/Limal1.jpg"
+    />
+    <meta property="og:locale" content="pl_PL" />
+
+    <!-- Czcionki i style -->
+    <link href="https://fonts.cdnfonts.com/css/clan-pro" rel="stylesheet" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="indexmobile.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="swiper.css" />
+
     <link rel="preconnect" href="https://fonts.cdnfonts.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -40,44 +69,61 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       />
     </noscript>
-    <link rel="stylesheet" href="navigation.css" />
-    <link rel="stylesheet" href="swiper.css" />
 
-    <meta
-      property="og:title"
-      content="Open Graph Meta Tags: Everything You Need to Know"
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:description"
-      content="Make your content more clickable and shareable on social media."
-    />
-    <meta
-      property="og:url"
-      content="https://ahrefs.com/blog/open-graph-meta-tags/"
-    />
-    <meta property="og:site_name" content="SEO Blog by Ahrefs" />
-    <meta property="og:title" content="Osk LimaL" />
-    <meta
-      property="og:url"
-      content="https://www.facebook.com/profile.php?id=61563162144848"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://www.limal.pl/image/Limal1.jpg"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:description" content="Osk LimaL" />
-    <meta property="og:locale" content="pl_PL" />
-    <meta property="fb:app_id" content="" />
-    <title>Kursy i Nauka Jazdy Limanowa - OSK LimaL</title>
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://osk-limal.vercel.app/#business",
+        "name": "OSK LimaL",
+        "url": "https://osk-limal.vercel.app/",
+        "image": "https://osk-limal.vercel.app/image/Limal1.jpg",
+        "telephone": "+48 660 026 988",
+        "priceRange": "PLN",
+        "description": "Profesjonalna szkoła jazdy w Limanowej. Kursy prawa jazdy kategorii B, doświadczeni instruktorzy, konkurencyjne ceny.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Limanowa",
+          "addressRegion": "Małopolskie",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.7056,
+          "longitude": 20.4220
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61563162144848"
+        ]
+      }
+    </script>
   </head>
 
   <body>
     <div class="scroll-arrow">
-      <img src="image/down.png" alt="strzałka do przewijania" loading="lazy" />
+      <img
+        src="image/down.png"
+        alt="strzałka do przewijania"
+        loading="lazy"
+        width="32"
+        height="32"
+      />
     </div>
 
     <div class="header-section">
@@ -89,16 +135,19 @@
                 src="image/Limal1.jpg"
                 alt="Nauka jazdy w OSK LimaL Limanowa"
                 loading="lazy"
+                width="120"
+                height="120"
             /></a>
           </div>
 
-          <div class="hamburger">
+          <div class="hamburger" aria-label="menu">
             <svg
-              width="800px"
-              height="800px"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 id="top"
@@ -130,20 +179,22 @@
               />
             </svg>
           </div>
+
           <nav class="navigation">
             <ul class="nav-links">
               <li><a href="#O_nas" title="O nas">O nas</a></li>
-              <li><a href="#Materialy" title="Materialy">Materiały</a></li>
+              <li><a href="#Materialy" title="Materiały">Materiały</a></li>
               <li><a href="#Galeria" title="Galeria">Galeria</a></li>
               <li><a href="#Kontakt" title="Kontakt">Kontakt</a></li>
             </ul>
+
             <div class="additional-info">
               <div class="facebook-floating">
                 <a
                   class="social-facebook"
                   title="Nauka jazdy w OSK LimaL Limanowa"
                   target="_blank"
-                  rel="norefferrer"
+                  rel="noreferrer"
                   href="https://www.facebook.com/profile.php?id=61563162144848"
                 >
                   <img
@@ -151,8 +202,12 @@
                     src="image/facebook.png"
                     alt="Facebook Nauka jazdy w OSK LimaL Limanowa"
                     class="contact-icon"
-                /></a>
+                    width="24"
+                    height="24"
+                  />
+                </a>
               </div>
+
               <ul class="contact-info">
                 <li>
                   <a
@@ -161,12 +216,14 @@
                   >
                     <img
                       src="image/telephone.png"
-                      alt="Nauka jazdy w OSK LimaL Limanowa"
+                      alt="Telefon OSK LimaL"
                       loading="lazy"
                       class="contact-icon"
+                      width="24"
+                      height="24"
                     />
-                    +48660026988</a
-                  >
+                    +48 660 026 988
+                  </a>
                 </li>
                 <li>
                   <a
@@ -176,67 +233,76 @@
                   >
                     <img
                       src="image/mail.png"
-                      alt="Nauka jazdy w OSK LimaL Limanowa"
+                      alt="Mail OSK LimaL"
                       loading="lazy"
                       class="contact-icon"
+                      width="24"
+                      height="24"
                     />
-                    osklimal@gmail.com</a
-                  >
+                    osklimal@gmail.com
+                  </a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+
         <div class="additional-info desktop">
           <div class="facebook-floating">
             <a
               class="social-facebook"
               title="Nauka jazdy w OSK LimaL Limanowa"
               target="_blank"
-              rel="norefferrer"
+              rel="noreferrer"
               href="https://www.facebook.com/profile.php?id=61563162144848"
             >
               <img
-                id="facebook"
+                id="facebook-desktop"
                 src="image/facebook.png"
                 alt="Facebook Nauka jazdy w OSK LimaL Limanowa"
                 class="contact-icon"
-            /></a>
+                width="24"
+                height="24"
+              />
+            </a>
           </div>
+
           <ul class="contact-info">
             <li>
-              <a
-                href="tel:+48660026988"
-                title="Ośrodek Szkolenia Kierowców LimaL"
-              >
+              <a href="tel:+48660026988" title="Telefon OSK LimaL">
                 <img
                   src="image/telephone.png"
-                  alt="Nauka jazdy w OSK LimaL Limanowa"
+                  alt="Telefon OSK LimaL"
                   loading="lazy"
                   class="contact-icon"
+                  width="24"
+                  height="24"
                 />
-                +48660026988</a
-              >
+                +48 660 026 988
+              </a>
             </li>
             <li>
               <a
                 href="mailto:osklimal@gmail.com"
-                title="Ośrodek Szkolenia Kierowców LimaL"
+                title="E-mail OSK LimaL"
                 class="email-img"
               >
                 <img
                   src="image/mail.png"
-                  alt="Nauka jazdy w OSK LimaL Limanowa"
+                  alt="Mail OSK LimaL"
                   loading="lazy"
                   class="contact-icon"
+                  width="24"
+                  height="24"
                 />
-                osklimal@gmail.com</a
-              >
+                osklimal@gmail.com
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="hero">
       <div class="hero-bg"></div>
       <div class="container z-50">
@@ -256,16 +322,16 @@
 
         <hr />
 
-        <a href="#Kontakt"
-          ><button class="button">Skontaktuj się z nami</button></a
-        >
+        <a href="#Kontakt"><button class="button">Skontaktuj się z nami</button></a>
       </div>
     </div>
+
     <main class="container" id="O_nas">
       <div class="section">
         <div class="about-section text-center">
           <h2 class="heading-1">O nas</h2>
         </div>
+
         <div class="card-wrapper">
           <div class="card">
             <div class="main-card">
@@ -273,6 +339,8 @@
                 src="image/driving-school.png"
                 alt="Nauka jazdy w OSK LimaL Limanowa"
                 loading="lazy"
+                width="96"
+                height="96"
               />
             </div>
             <hr />
@@ -283,13 +351,15 @@
               </p>
             </div>
           </div>
-          <!--  -->
+
           <div class="card">
             <div class="main-card">
               <img
                 src="image/maneuver.png"
                 alt="Nauka jazdy w OSK LimaL Limanowa"
                 loading="lazy"
+                width="96"
+                height="96"
               />
             </div>
             <hr />
@@ -304,13 +374,15 @@
               </p>
             </div>
           </div>
-          <!--  -->
+
           <div class="card">
             <div class="main-card">
               <img
                 src="image/training.png"
                 alt="Nauka jazdy w OSK LimaL Limanowa"
                 loading="lazy"
+                width="96"
+                height="96"
               />
             </div>
             <hr />
@@ -324,7 +396,7 @@
           </div>
         </div>
       </div>
-      <!--  -->
+
       <div class="section" id="Galeria">
         <div class="section swiper mySwiper">
           <div class="container">
@@ -339,8 +411,6 @@
         </div>
       </div>
 
-      <!--  -->
-
       <div class="container section" id="Materialy">
         <div class="app-content">
           <div>
@@ -349,12 +419,12 @@
               <span class="accent">miejscu!</span>
             </h1>
             <p class="paragraph">
-              Przedstawiamy darmową aplikacje do pobrania w Google Play oraz App
+              Przedstawiamy darmową aplikację do pobrania w Google Play oraz App
               Store, która pomoże Ci w przygotowaniach do egzaminu na prawo
               jazdy oraz w zrozumieniu aktualnych przepisów drogowych. Testy na
-              prawo jazdy skutecznie przygotują cię do egzaminu teoretycznego. Z
+              prawo jazdy skutecznie przygotują Cię do egzaminu teoretycznego. Z
               taryfikatorem mandatów TaPo24 bądź na bieżąco z aktualnym
-              taryfikatorem mandatów i dowiedz się, jakie są konsekwencje za
+              taryfikatorem i dowiedz się, jakie są konsekwencje za
               naruszenia przepisów drogowych.
             </p>
           </div>
@@ -364,19 +434,21 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="image/image 23.png" alt="Google Play" loading="lazy" />
+              <img src="image/image 23.png" alt="Google Play" loading="lazy" width="180" height="54" />
             </a>
             <a
               href="https://apps.apple.com/pl/app/prawo-jazdy-2024/id1494686336?l=pl"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="image/app-store.png" alt="App Store" loading="lazy" />
+              <img src="image/app-store.png" alt="App Store" loading="lazy" width="180" height="54" />
             </a>
             <a
               href="https://tapo24.pl/"
               target="_blank"
               rel="noopener noreferrer"
+              class="tapo24"
+              aria-label="TaPo24 - taryfikator mandatów"
             >
               <div class="tapo24">
                 <p>TaPo24</p>
@@ -386,6 +458,7 @@
         </div>
       </div>
     </main>
+
     <footer class="container">
       <div class="footer-container">
         <div class="contact">
@@ -398,87 +471,95 @@
               Skontaktuj się z nami, aby omówić szczegóły naszej oferty i
               rozpocząć współpracę.
             </p>
-            <p class="phone-num">660026988</p>
-            <div class="circle"></div>
+            <p class="phone-num">
+              <a href="tel:+48660026988" class="phone-link">+48 660 026 988</a>
+            </p>
+            <div class="circle" aria-hidden="true"></div>
           </div>
         </div>
+
         <div role="group" class="custom-form">
-          <form action="https://submit-form.com/dq9bszVjA" id="contact-form">
+          <!-- FORMULARZ z reCAPTCHA v2 Invisible -->
+          <form action="https://submit-form.com/dq9bszVjA" id="contact-form" method="POST" novalidate>
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://osk-limal.vercel.app/?thanks=true"
+            />
+
+            <!-- Telefon -->
             <div class="form-group">
-              <input
-                type="hidden"
-                name="_redirect"
-                value="https://osk-limal.vercel.app/?thanks=true"
-              />
-            </div>
-            <!-- telefon -->
-            <div class="form-group">
-              <label id="phone-label" class="form-label" for="phone"
-                >Telefon<span
-                  role="presentation"
-                  aria-hidden="true"
-                  class="required"
-                  >*</span
-                ></label
-              >
+              <label id="phone-label" class="form-label" for="telephone">
+                Telefon <span aria-hidden="true" class="required">*</span>
+              </label>
               <input
                 id="telephone"
                 name="telefon"
-                type="telephone"
-                pattern="\d{3} \d{3} \d{3}"
+                type="tel"
+                pattern="^\d{3}\s?\d{3}\s?\d{3}$"
                 title="Numer telefonu powinien być w formacie 500 600 700"
                 placeholder="500 600 700"
                 autocomplete="tel"
                 required
               />
             </div>
+
+            <!-- Email -->
             <div class="form-group">
-              <label id="email-label" class="form-label" for="email"
-                >Adres e-mail<span
-                  role="presentation"
-                  aria-hidden="true"
-                  class="required"
-                  >*</span
-                ></label
-              >
+              <label id="email-label" class="form-label" for="email">
+                Adres e-mail <span aria-hidden="true" class="required">*</span>
+              </label>
               <input
-                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
-                name="email"
                 id="email"
-                title="Adres e-mail powinien mieć format adres@email.pl"
+                name="email"
+                type="email"
                 placeholder="adres@email.com"
                 autocomplete="email"
                 required
               />
             </div>
+
+            <!-- Wiadomość -->
             <div class="form-group">
-              <label id="message-label" for="message" class="form-label"
-                >Wiadomość</label
-              >
+              <label id="message-label" for="message" class="form-label">
+                Wiadomość
+              </label>
               <textarea
                 name="message"
+                id="message"
                 placeholder="Maksymalnie 250 znaków"
                 maxlength="250"
-                id="message"
-                clas="form-textarea"
+                class="form-textarea"
               ></textarea>
             </div>
-            <button class="button" type="submit">Wyślij</button>
+
+            <!-- PRZYCISK: reCAPTCHA v2 Invisible -->
+            <button
+              class="g-recaptcha button"
+              data-sitekey="TWÓJ_SITE_KEY"
+              data-callback="onSubmit"
+              data-size="invisible"
+              data-action="submit"
+              type="submit"
+            >
+              Wyślij
+            </button>
+
             <p
               id="tel-error-message"
-              style="display: none; color: #007dbf; margin-top: 20px"
+              style="display:none;color:#007dbf;margin-top:20px"
             >
               Numer telefonu powinien być w formacie 500 600 700
             </p>
             <p
               id="mail-error-message"
-              style="display: none; color: #007dbf; margin-top: 20px"
+              style="display:none;color:#007dbf;margin-top:20px"
             >
-              Adres e-mail powinien mieć format adres@email.pl
+              Adres e-mail powinien mieć poprawny format
             </p>
             <p
               id="success-message"
-              style="display: none; color: #007dbf; margin-top: 20px"
+              style="display:none;color:#007dbf;margin-top:20px"
             >
               Formularz został wysłany pomyślnie!
             </p>
@@ -486,18 +567,20 @@
         </div>
       </div>
     </footer>
-    <!--  -->
+
     <div class="bg-dark">
       <div class="footer-logo">
         <img
           src="image/Limal1.jpg"
-          alt="Nauka jazdy w OSK LimaL Limanowa"
+          alt="Logo OSK LimaL"
           loading="lazy"
+          width="120"
+          height="120"
         />
       </div>
       <div class="formal-info">
-        <p>Nip: 7372028777</p>
-        <p>Regon: 528800246</p>
+        <p>NIP: 7372028777</p>
+        <p>REGON: 528800246</p>
         <p>Nr konta: 81 1240 5152 1111 0011 4123 5573</p>
       </div>
       <div></div>
@@ -505,7 +588,8 @@
 
     <div class="popup-container"></div>
 
-    <script src="js/navigation.js" async></script>
+    <!-- Skrypty -->
+    <script src="js/navigation.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
@@ -513,5 +597,31 @@
     <script src="slider.js" defer></script>
     <script src="index.js" defer></script>
     <script src="js/send-email.js" defer></script>
+
+    <!-- reCAPTCHA v2 Invisible -->
+    <script src="https://www.google.com/recaptcha/api.js" defer></script>
+    <script>
+      // Callback wywoływany przez reCAPTCHA po uzyskaniu tokenu
+      function onSubmit(token) {
+        const telOk = /^\d{3}\s?\d{3}\s?\d{3}$/.test(
+          document.getElementById("telephone").value
+        );
+        const emailOk = document.getElementById("email").checkValidity();
+
+        document.getElementById("tel-error-message").style.display = telOk
+          ? "none"
+          : "block";
+        document.getElementById("mail-error-message").style.display = emailOk
+          ? "none"
+          : "block";
+
+        if (telOk && emailOk) {
+          document.getElementById("contact-form").submit();
+        } else if (window.grecaptcha) {
+          // jeśli walidacja nie przeszła, resetujemy reCAPTCHA
+          grecaptcha.reset();
+        }
+      }
+    </script>
   </body>
 </html>
