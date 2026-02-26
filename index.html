@@ -447,14 +447,6 @@
         </div>
 
         <div role="group" class="custom-form">
-          <!-- FORMULARZ z reCAPTCHA v2 Invisible -->
-          <form action="https://submit-form.com/dq9bszVjA" id="contact-form" method="POST" novalidate>
-            <input
-              type="hidden"
-              name="_redirect"
-              value="https://osk-limal.vercel.app/?thanks=true"
-            />
-
             <!-- Telefon -->
             <div class="form-group">
               <label id="phone-label" class="form-label" for="telephone">
@@ -565,31 +557,5 @@
     <script src="slider.js" defer></script>
     <script src="index.js" defer></script>
     <script src="js/send-email.js" defer></script>
-
-    <!-- reCAPTCHA v2 Invisible -->
-    <script src="https://www.google.com/recaptcha/api.js" defer></script>
-    <script>
-      // Callback wywoływany przez reCAPTCHA po uzyskaniu tokenu
-      function onSubmit(token) {
-        const telOk = /^\d{3}\s?\d{3}\s?\d{3}$/.test(
-          document.getElementById("telephone").value
-        );
-        const emailOk = document.getElementById("email").checkValidity();
-
-        document.getElementById("tel-error-message").style.display = telOk
-          ? "none"
-          : "block";
-        document.getElementById("mail-error-message").style.display = emailOk
-          ? "none"
-          : "block";
-
-        if (telOk && emailOk) {
-          document.getElementById("contact-form").submit();
-        } else if (window.grecaptcha) {
-          // jeśli walidacja nie przeszła, resetujemy reCAPTCHA
-          grecaptcha.reset();
-        }
-      }
-    </script>
   </body>
 </html>

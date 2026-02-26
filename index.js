@@ -18,14 +18,3 @@ scrollButton.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
-// reCaptacha
-
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute(
-      "6LfHaU4qAAAAAPEpVprtAxYbi-r_zXJJtGtyMkGh",
-      { action: "LOGIN" }
-    );
-  });
-}
