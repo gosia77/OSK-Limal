@@ -259,13 +259,14 @@ a {
 
 /* contact */
 
-.phone-num {
+.phone-num a {
   font-weight: 700;
   line-height: 48px;
   font-size: 2rem;
   padding-top: 30px;
   padding-left: 20px;
   text-decoration: none;
+  color: white;
 }
 
 .contact {
